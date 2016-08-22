@@ -1,18 +1,390 @@
+
+/*======= 头部 ========*/
+
 #header{
     height:125px;
     width:100%;
-    background: #ccc;
-    
+    border-bottom:1px solid #ccc;
 }
 .header_content{
-    width:1240px;
+    width:1250px;
     height:125px;
     margin:0 auto;
-    background:#abcdef;
 }
 .header_content h1{
     width:300px;
     height:80px;
     float: left;
-   margin-top:20px;
+    margin-top:20px;
+}
+.select{
+    float:left;
+    margin-left:50px;
+    width:390px;
+    height:32px;
+    padding-top:80px;
+    background: url(../images/rio2016.jpg) 0 34px no-repeat;
+}
+.select li{
+    float:left;
+    margin-right:30px;
+    overflow: hidden;
+}
+.select li a{
+    float:left;
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    text-indent: -100px;
+}
+.select .wormans a{
+     background:url(../images/nav_sprite.png) -100px 0;
+}
+.select .mans a{
+     background:url(../images/nav_sprite.png) 0 -30px;
+}
+.select .beauty a{
+     background:url(../images/nav_sprite.png) 0 -60px;
+}
+.sign_in{
+    height:73px;
+    width:280px;
+    float:right;
+    margin:32px 30px 0 0;
+    padding-left:50px;
+    background: url(../images/slogan.jpg) -5px 50px no-repeat;
+}
+.sign_in li{
+    float:left;
+    width:90px;
+    height:50px;
+    text-align:right;
+     line-height:50px;
+}
+.sign_in a{
+    color:#000;
+    font-weight:500;
+    
+}
+.sign_in .zhuce{
+    width:90px;
+    height:50px;
+    line-height:50px;
+    text-align:right;
+
+}
+.sign_in .car{
+   
+    line-height:50px;
+}
+
+
+/*========= 轮播图片区  ==========*/
+
+#main_top{
+/*    background:#abcdef;*/
+    width:100%;
+
+}
+#main_top .main_pic{
+    width:1100px;
+    left:158px;
+    position: relative;
+
+}
+.main_pic .left_pic{
+    width:240px;
+    height:549px;
+    float:left;
+}
+.main_pic .right_pic{
+    width:240px;
+    height:549px;
+    float:right;
+}
+
+.mian_pic .mv1,.mian_pic .green{
+    width:100%;
+    height:100%;
+}
+
+.main_pic .lunbo{
+    width:618px;
+    height:552px;
+    overflow: hidden;
+    float:left;
+    margin:0 1px;
+    position: relative;
+}
+.main_pic .lunbo ul{
+    width:618px;
+    height:552px;
+}
+.main_pic .lunbo ul li{
+    width:618px;
+    height:552px;
+}
+
+.main_pic .lunbo img{
+    width:100%;
+    height:100%;
+}
+
+.lunbo .btns{
+    position: absolute;
+    bottom:10px;
+    text-align: center;
+    width:100%;
+}
+.main_pic .btns span{
+    display:inline-block;
+    width:50px;
+    height:20px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 4px;
+    background:rgba(0,0,0,.3);
+    font-size: 20px;
+    border-radius:15px;
+    color:#fff;
+    cursor:pointer;
+}
+.main_pic .btns .active{
+    background:#fff ;
+    color:#000;
+}
+
+.bt_pic{
+    width:1100px;
+    height:330px;
+    float:left;
+}
+.bt_pic li{
+    float:left;
+    height:330px;
+}
+.bt_pic li img{
+    width:100%;
+    height:100%;
+}
+.bt_pic .li1{
+    width:377px;
+    margin-right:1px;
+}
+.bt_pic .li2,.bt_pic .li3{
+    width:240px;
+    margin-right:1px;
+}
+.bt_pic .li4{
+    width:240px;
+    margin-right:0;
+}
+
+/*\=====  左侧边列表  ======*/
+
+#left_pos{
+    width:144px;
+    position: absolute;
+    left: -157px;
+    top:0;
+    border-right:1px solid #ccc;
+    text-indent:25px; 
+    padding-bottom:83px;
+}
+#left_pos .new{
+    font-size:16px;
+    width:144px;
+    height:49px;
+    line-height:49px;
+    border-bottom:1px solid #ccc;
+    background:url(../images/new.gif) 107px center no-repeat;
+}
+
+
+#left_pos .new_goods,#left_pos .goods_list{
+    width:144px;
+    margin-top:26px;
+}
+
+#left_pos .new_goods li,#left_pos .goods_list li{
+    line-height:24px;
+    font-size:14px;
+}
+#left_pos .new_goods .best_good{
+    color:#ff5050;
+}
+#left_pos .goods_list .meizhuang span{
+    font-size:14px;
+    color:#ff5050;
+    font-style:italic;
+}
+#left_pos .star{
+    font-size:14px;
+    width:144px;
+    height:46px;
+    line-height:46px;
+    border-bottom:1px solid #ccc;
+    border-top:1px solid #ccc;
+    margin-top:26px;
+}
+#left_pos .model{
+    font-size:14px;
+    width:144px;
+    height:46px;
+    line-height:46px;
+    border-bottom:1px solid #ccc;
+    margin-bottom:26px;
+}
+
+#left_pos .pic_one{
+    width:144px;
+}
+#left_pos .pic_one img{
+    display: block;
+    width:144px;
+    height:220px;
+    margin-top:20px;
+}
+
+.five_pic{
+    width:1100px;
+    height:220px;
+    position:relative;
+    left:158px;
+    margin-top:50px;
+}
+.five_pic li{
+    width:219px;height:219px;float:left;margin-right:1px;
+}
+.five_pic li img{
+    display: block;
+    width:219px;
+    height:219px;
+}
+
+
+/*====== 产品页面 ======*/
+#main{
+    width:1100px;
+    position:relative;
+    left:145px;
+    padding-left:33px;
+    border-left:1px solid #ccc;
+}
+#main h2{
+    font-size:16px;
+    text-align:center;
+    padding:50px 0;
+    font-weight:none;
+}
+
+#main .newArr{
+    width:1100px;
+    margin-bottom:15px;
+}
+#main .newArr li{
+    width:240px;
+    height: 460px;
+    margin:24px 46px 24px 0;
+    float:left;
+}
+#main .newArr .clear{
+    margin-right:0;
+}
+
+#main .newArr li img{
+    width:240px;
+    height:330px;
+    display: inline-block;
+    margin-bottom:14px;
+}
+
+#main .newArr .new_product{
+    width:240px;height:26px;line-height:26px;
+}
+#main .newArr .new_product span{
+    display: inline-block;
+    width:35px;
+    text-indent:-100px;
+    overflow: hidden;
+    background:url(../common/img.png) 0 -17px no-repeat;
+}
+#main .newArr .korea,#main .newArr .xianglian,#main .newArr .english{
+    height:15px;
+    margin-bottom:8px;
+}
+#main .newArr .korea a{
+    font-size: 12px;
+}
+#main .newArr .xianglian a{
+    font-size: 14px;
+}
+#main .newArr .price em{
+    text-decoration:line-through;
+}
+#main .newArr .price span{
+    color:#ff5050;
+}
+
+
+/*=======  底部 =========*/
+
+#official{
+    width:100%;
+    
+}
+#official img{
+    display: inline-block;
+    width:1100px;
+    height:220px;
+    margin:0 0 40px 130px;
+}
+
+#footer{
+    width:100%;
+    height:440px;
+    background:#abcdef;
+    border-top:1px solid #ccc;
+}
+#footer .foot_main{
+    width:1100px;
+    height:246px;
+    padding-top:60px;
+    padding-bottom:28px;
+    border-bottom:1px solid #ccc;
+    margin:0 auto;
+    background:#66c;
+}
+#footer .foot_main .foot_left{
+    width:443px;
+    height:248px;
+    border-right:1px solid #ccc;
+}
+#footer .foot_main .foot_left .allCenter{
+    font-size:14px;
+    color:#ccc;
+}
+#footer .foot_main .foot_left h3{
+    font-size:24px;
+    line-height:40px;
+}
+
+#footer .foot_main .restTime,#footer .foot_main .returnAdress{
+    line-height:18px;
+    font-size:14px;
+    margin:10px 0;
+    color:#000;
+}
+#footer .foot_main .address{
+    width:420px;
+    line-height:18px;
+    font-size:12px;
+    color:#e0e0e0;
+    margin-top:18px;
+}
+#footer .foot_main .police{
+    width:420px;
+    line-height:18px;
+    font-size:12px;
+    color:#e0e0e0;
 }

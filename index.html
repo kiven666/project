@@ -7,34 +7,755 @@
 <link rel="stylesheet" type="text/css" href="css/firstPage.css">
 <link rel="stylesheet" type="text/css" href="common/common.css">
 
+<script src="common/jquery-1.10.2.min.js"></script>
 
 <body>
 
     <div id="header">
         <div class="header_content">
             <h1><img src="images/logo.png" alt="时尚起义"></h1>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="select">
+                <li class="wormans"><a href="#">女装区</a></li>
+                <li class="mans"><a href="#">男装区</a></li>
+                <li class="beauty"><a href="#">美妆区</a></li>
             </ul>
             <ul class="sign_in">
-                <li>
-                    <a href="#">登录</a>/
-                    <a href="#">注册</a>
+                <li class="zhuce">
+                    <a href="#">登录</a>/<a href="#">注册</a>
                 </li>
-                <li>
-                    <a href="#">购物车</a>
-                    <span class="carCnt">0</span>
+                <li class="car">
+                    <a href="#">购物车</a><span class="carCnt">(0)</span>
                 </li>
-                <li>
-                    <a href="#">暂存架</a>
-                    <span class="sheet">0</span>
+                <li class="zancun">
+                    <a href="#">暂存架</a><span class="sheet">(0)</span>
                 </li>
             </ul>
         </div>
-
     </div>
     
+    <div id="main_top">
+        
+        <div class="main_pic f-cb">
+            <div class="left_pic">
+                <img class="mv1" src="images/mv1.gif" alt="">
+                <img class="green" src="images/green.jpg" alt="">
+            </div>
+            <div class="lunbo">
+                <ul>
+                    <li><img src="images/beach.jpg" alt=""></li>
+                    <li><img src="images/lunbo_1.jpg" alt=""></li>
+                    <li><img src="images/lunbo_2.jpg" alt=""></li>
+                    <li><img src="images/lunbo_3.jpg" alt=""></li>
+                </ul>
+                <div class="btns">
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                </div>
+            </div>
+
+            <div class="right_pic">
+                <img class="mv1" src="images/mv2.gif" alt="">
+                <img class="green" src="images/green.jpg" alt="">
+            </div>
+
+            <ul class="bt_pic">
+                <li class="li1"><img src="images/bikini.jpg" alt=""></li>
+                <li class="li2"><img src="images/dress.jpg" alt=""></li>
+                <li class="li3"><img src="images/dress_1.jpg" alt=""></li>
+                <li class="li4"><img src="images/dress_2.jpg" alt=""></li>
+            </ul>
+
+            <div id="left_pos">
+
+                <p class="new">评论赢积分</p>
+                <ul class="new_goods">
+                    <li class="best_good">最新商品</li>
+                    <li>一周爆款</li>
+                    <li>热卖商品</li>
+                    <li>最佳口碑</li>
+                </ul>
+                <ul class="goods_list">
+                    <li>上衣</li>
+                    <li>衬衫&罩衫</li>
+                    <li>外套</li>
+                    <li>半身裙</li>
+                    <li>连衣裙</li>
+                    <li>裤装</li>
+                    <li>鞋&包</li>
+                    <li>配饰</li>
+                    <li>内衣</li>
+                    <li>SUMMER</li>
+                    <li class="meizhuang">美妆 <span>50% OFF</span></li>
+                </ul>
+                <p class="star">明星赞助</p>
+                <p class="model">模特日记&大事件</p>
+                <div class="pic_one">
+                    <img src="images/ad_07.jpg" alt="">
+                    <img src="images/ad_01.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <ul class="five_pic f-cb">
+                <li><img src="images/keyword_01.jpg" alt=""></li>
+                <li><img src="images/keyword_2.jpg" alt=""></li>
+                <li><img src="images/keyword_3.jpg" alt=""></li>
+                <li><img src="images/keyword_4.jpg" alt=""></li>
+                <li><img src="images/keyword_5.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div id="main">
+        <h2>New Arrivals</h2>
+        <ul class="newArr f-cb">
+            <li>
+                <a><img src="images/m1.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m2.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li>
+                <a><img src="images/m3..jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li class="clear">
+                <a><img src="images/m4.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li>
+                <a><img src="images/m5.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+
+            <li>
+                <a><img src="images/m6.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m7.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m8.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m9..jpg" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m10.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m11.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m12.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+        </ul>
+        <hr/>
+        
+        <h2>Best Items</h2>
+        <ul class="newArr f-cb">
+            <li>
+                <a><img src="images/m1.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m2.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li>
+                <a><img src="images/m3..jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li class="clear">
+                <a><img src="images/m4.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li>
+                <a><img src="images/m5.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+
+            <li>
+                <a><img src="images/m6.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m7.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m8.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m16.gif" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m10.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m18.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m12.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m27.jpg" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m19.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m28.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m12.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m30.jpg" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m14.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m23.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m12.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m25.gif" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m10.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m18.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m12.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m28.gif" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m17.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m27.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m25.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m20.jpg" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m21.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m22.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m23.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m25.gif" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m10.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m18.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m12.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+
+            <li>
+                <a><img src="images/m16.gif" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m10.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m18.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m24.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m27.jpg" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m19.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m28.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m30.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m1.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m2.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li>
+                <a><img src="images/m3..jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li class="clear">
+                <a><img src="images/m4.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+            </li>
+            <li>
+                <a><img src="images/m20.jpg" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m21.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m22.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m23.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m28.gif" alt=""></a>
+                 <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥190</em> <span>----￥155</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m17.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li>
+                <a><img src="images/m27.jpg" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+            <li class="clear">
+                <a><img src="images/m25.gif" alt=""></a>
+                <p class="new_product"><span>新品</span></p>
+                <p class="korea"><a href="#">여리함이 돋보이는 루즈핏 오프숄더 티 </a></p>
+                <p class="xianglian"><a href="#">可打造多样造型的项链</a></p>
+                <p class="english"><a href="#">Off The Shoulder Loose Fit Tee</a></p>
+                <p class="price"><em>￥130</em> <span>----￥99</span></p>
+
+            </li>
+        </ul>
+    </div>
+        
+
+    <!--==========  底部  ===============-->
+
+    <div id="official">
+        <img src="images/guarantee.jpg" alt="">
+    </div>
+
+    <div id="footer">
+
+        <div class="foot_main">
+            <div class="foot_left">
+                <p class="allCenter">CALL CENTER</p>
+                <h3>400 818 4371</h3>
+                <p class="restTime">8:00AM~17:00PM/午休 12:00~13:00PM<br/>周六、法定节假日休息</p>
+               
+
+                <p class="returnAdress">退货地址：上海市闵行区万源路2158号 泓毅大厦413室<br/>邮编：201103</p>
+ 
+                <p class="address">DAHONG&ZINIF Co., Ltd. / (10F, URBANHIVE BLDG. Nonhyeon-dong) 476.
+Gangnam-daero, Gangnam-gu, Seoul, Korea</p>
+                <p class="police">通信营业备案 : 第2011-首尔江南-03049号 / 注册文件号码 211-88-67647</p>
+                <p class="police">代表理事 : 李东桓 / 隐私保护负责人 : 朴竟墅</p>
+            </div>
+            <div class="foot_right">
+                
+            </div>
+        </div>
+        
+        <div class="foot_pic">
+                
+        </div>
+
+    </div>
+
+
+<script src="js/firstPage.js"></script>
+
+
 </body>
 </html>
