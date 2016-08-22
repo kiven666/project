@@ -1,0 +1,18 @@
+#header{
+    height:125px;
+    width:100%;
+    background: #ccc;
+    
+}
+.header_content{
+    width:1240px;
+    height:125px;
+    margin:0 auto;
+    background:#abcdef;
+}
+.header_content h1{
+    width:300px;
+    height:80px;
+    float: left;
+   margin-top:20px;
+}
