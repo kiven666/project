@@ -1,4 +1,8 @@
+
+
 $(function(){
+
+/*==========     放大镜    ==============*/
 
     var $smallPic = $(".magnifier");
     var $block = $(".block");
@@ -15,8 +19,8 @@ $(function(){
         nLeft = $smallPic.offset().left;
         nTop = $smallPic.offset().top;
 
-        nX = e.clientX - nLeft - $block.width()/2;
-        nY = e.clientY - nTop ;
+        nX = e.pageX - nLeft - $block.width()/2;
+        nY = e.pageY - nTop - $block.height()/2;
 
         if(nX<0){
             nX = 0;
@@ -35,6 +39,29 @@ $(function(){
     }).on("mouseout",function(){
         $block.hide();
         $bigPic.hide();
+    })
+
+
+
+/*==========     商品评论    ==============*/
+
+    var oLi = $(".china_comment").children();
+    
+
+    oLi.on("click","a",function(){
+
+        var $comment = $(".says");
+        
+        if ($(this).parent().parent().next().is(':hidden')) {
+            $comment.hide();
+            $(this).parent().parent().next().show();    
+        } else {
+            $comment.hide();
+            $(this).parent().parent().next().hide();
+        }
+        
+        
+        // return false;
     })
 
 

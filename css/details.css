@@ -4,9 +4,11 @@
 }
 #introduce .mainDetail{
     width:1100px;
-    background:#ddd;
+   
     position:relative;
     left:158px;
+    padding-left:20px;
+    border-left:1px solid #ccc;
 }
 #introduce .mainDetail .korea_worman{
     width:1000px;
@@ -86,3 +88,81 @@
 .buy a{display: inline-block;float;float:left;margin-right:4px;width:255px;height:44px;line-height:44px;text-align:center;font-size:16px;color:#fff;}
 .buy .put{background:#c0c0c0;}
 .buy .join{background:#dfa4a4;margin-right:0;}
+
+
+/*========  商品详情  =============*/
+
+.descript{margin:70px 0;background:#f7f7f7;}
+
+.descript a{width:210px;height:68px;padding-top:22px;display: inline-block;font-size: 14px;text-align:center;color:#c0c0c0;margin-right:-1px;overflow: hidden}
+.descript a:hover{color:#df4f4f;}
+.descript b{display:inline-block;width:1px;height:50px;line-height:50px;background:#e6e6e6;margin:20px 0;text-indent:1px;overflow:hidden;}
+
+.two_ul{width:1100px;height:462px;}
+.two_ul .ul_left{width:550px;float:left;margin:0 50px 0 25px;background:url(../images/info_bg.jpg) right repeat-y;}
+.two_ul .ul_left li{line-height: 36px;width:480px;text-align:center;}
+.two_ul .ul_right{width:450px;float:left;}
+.two_ul .ul_right li{line-height: 44px;width:480px;text-align:center;}
+
+
+.size_info{width:1100px;height:68px;background:#f7f7f7;padding-top:22px;font-size:16px;text-align:center;color:#000;}
+.size_info span{line-height:22px;}
+
+
+.size_detail{width:860px;margin:60px auto;}
+.size_detail .good_reduce{width:465px;font-size:16px;color:#6f6f6f;float:left;}
+.size_detail .good_reduce li{width:465px;height:57px;line-height:57px;border-top:1px dashed #6f6f6f;}
+.size_detail .good_reduce li span{display: inline-block;width:155px;text-indent:10px;float:left;}
+.size_detail .good_reduce li p em,.size_detail .good_reduce li p i,.size_detail .good_reduce li p b{display: inline-block;width:60px;height:30px;text-align:center;line-height:30px;margin-right:40px;}
+.size_detail .good_reduce li p b,.size_detail .good_reduce li p em{font-weight:normal;}
+.size_detail .close{width:288px;height:361px;float:left;margin-left:100px;}
+
+.size_detail .good_reduce .bac{background:#454242;color:#fff;}
+
+table{border:1px solid #ccc;width:860px;margin:60px auto;}
+td{border:1px solid #ccc;border-collapse:collapse;width:142px;height:30px;text-align:center;line-height:30px;}
+table .one_td{background:#e0e0e0;}
+
+.washing{border:1px solid #ccc;width:860px;margin:15px auto 100px auto;text-align:center;height:60px;background:#e0e0e0;line-height:70px;padding-top:10px;}
+/*.washing img{display:block;width:70px;height:36px;}*/
+
+.model{width:1100px;height:68px;padding-top:22px;text-align:center;background:#f5f3f3;}
+.model span{line-height:20px;}
+
+.model_img{width: 1100px;height:502px;text-align:center;margin:40px 0;}
+.model_img img{display: inline-block;border:1px dashed #ccc;width:282px;height:500px;}
+
+
+.coordinate{width:600px;margin:20px auto 0 auto;padding-left:30px;}
+.coordinate dl{width:185px;margin-right:80px;height:410px;float:left;}
+.coordinate dl dd{width:185px;line-height:20px;}
+.coordinate dl .back{background: url(../common/icon_sprite.png) 0-63px no-repeat;height:20px;}
+
+
+/*========   商品评论   ==========*/
+
+.china{width:930px;margin:0 auto;}
+.china h3{text-align:center;font-size:16px;color:#000;line-height: :28px;margin-top:40px;}
+.china .shuoming{text-align:center;font-size:14px;color:#bbb;line-height:20px;}
+
+.china_comment{margin-top:20px;border-top:1px dashed #ccc;}
+.china_comment li{border-bottom:1px dashed #ccc;}
+.comment_detail {line-height:44px;height:44px;}
+.comment_detail .time1{width:120px;text-align:center;float:left;}
+.comment_detail .secha{width:600px;padding-left:30px;float:left;font-weight:800;}
+.comment_detail .secha a{color:#000;}
+
+.china_comment .says{padding:10px 180px 10px 140px;background:#f3f3f3 url(../images/size_l.png) 110px 15px no-repeat;display:none;}
+.block{display:block;}
+.china_comment .says .size_l{line-height:18px;color:#888;}
+.china_comment .says .color_deep{margin-top: 10px;line-height: 20px;}
+
+
+.comment_detail .camare{background:url(../images/camare.jpg) left center no-repeat;}
+
+.oh2 a{display: block;width:120px;height:44px;background:#2b2b2b;text-align:center;color:#fff;line-height:44px;margin:80px auto;}
+
+.peisong{width:860px;margin:20px auto;padding: 20px 0;}
+.peisong span{display: inline-block;width:75px;line-height:25px;float:left;}
+.peisong p{width:860px}
+.peisong i{width:740px;float:left;display: inline-block;line-height:25px;}
