@@ -11,6 +11,8 @@
 <script src="../common/common.js"></script>
 <script src="../common/myjs.js"></script>
 <script src="../js/login.js"></script>
+<script src="../js/register.js"></script>
+
 
 <body>
     <!--顶部-->
@@ -46,41 +48,78 @@
         </div>
     </div>
     
+    <!--==========  注册界面   ============-->
+
     <div class="welcom">
         <div class="wel_top">
             <div class="kede f-cb">
                 <h2><img src="../images/kede_logo.gif" alt=""></h2>
-                <p class="wel_login">欢迎登录</p>
+                <p class="wel_login">欢迎注册</p>
             </div>
 
             <div class="login_main">
-                <p class="newMan"><a href="javascript:void(0);">免费注册></a><em>我是新用户?</em></p>
+                <p class="newMan"><a href="javascript:void(0);">立即登录></a><em>我已经注册</em></p>
+
                 <div class="box">
-                    <div class="box_left">
-                        <img src="../images/login.jpg" alt="">
+                    <div class="left_box">
+                        <div class="wocao">
+                            <ul class="set">
+                                <li>
+                                    <p><em>*</em>账户名:</p>
+                                    <input class="yys" type="text" placeholder="用户名/邮箱/手机">
+                                    <span class="error"></span>
+                                </li>
+                                <li>
+                                    <p><em>*</em>设置密码:</p>
+                                    <input class="mm" type="password" >
+                                    <span class="error"></span>
+                                </li>
+                                <li>
+                                    <p><em>*</em>确认密码:</p>
+                                    <input class="certainmm" type="password" >
+                                    <span class="error"></span>
+                                </li>
+                               <li>
+                                    <p><em>*</em>解锁验证:</p>
+                                    <div class="slide">
+                                        <div class="anzhu">请按住滑块，拖动到最右边</div> 
+                                        <div class="empty"></div>
+                                        <i class="slider"></i>
+                                    </div>
+                                    <span class="error"></span>
+                                </li>
+                                <li>
+                                    <p><em>*</em>验证码:</p>
+                                    <input class="yanzhengma" type="text">
+                                    <img class="picImg" src="../images/ma1.jpg" alt="验证码">
+                                    <span class="error"></span>
+                                </li>
+                            </ul>
+                            <div class="supReg">
+                                <input type="button" class="sub" value="提交注册">
+                                <p class="read"><label for=""><input type="checkbox"> 我已阅读并同意</label><a class="vv" href="javascript:void(0);">《可得用户注册协议》</a></p>
+                            </div>
+                        </div> 
                     </div>
-                    <div class="box_right">
-                        <p class="username"><i class="user"></i><input type="text" placeholder="用户名/邮箱/已验证手机"></p>
-                        <p class="password"><i class="pass"></i><input type="password" placeholder="密码"></p>
-                        
-                        <p class="auto">
-                            <label><input type="checkbox" class="gou">记住账户</label>
-                            <label><input type="checkbox" class="zidong">自动登录</label>
-                            <span class="feifa">请勿在公共电脑上使用</span>
-                            <a href="javascript:void(0);">忘记密码？</a>
-                        </p>
-                        <input type="button" class="denglu" value="登 录">
-                        <p class="wenzi">使用合作网站账户登录即可：</p>
-                        <p class="qq"><a class="qq1" href="javascript:void(0);"></a>
-                        <a class="weibo" href="javascript:void(0);"></a>
-                        <a class="zhi" href="javascript:void(0);"></a></p>
+
+                    <div class="right_box">
+                        <div class="r_b">
+                            <img src="../images/login.jpg" alt="">
+                        </div>
                     </div>
+
                 </div>
             </div>
            
         </div>
     </div>
-    
+
+
+
+
+
+
+
     <!--===      底部         ==-->
     <div class="footer">
         <div class="all">
