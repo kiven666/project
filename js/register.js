@@ -9,6 +9,7 @@ var index = {
 
     },
     initDom:function(){
+
         var dom = this.dom;
 
         dom.yys = $(".yys");    //用户名
@@ -27,10 +28,17 @@ var index = {
     },
 
     bindEvent:function(){
+
         var dom = this.dom;
 
+        var isName = false;
+        var isPass = false;
+        var eCode = false;
+        var isCertain = false;
+        var isSlide = false;
+        var isExit = false;
         dom.yys.blur(function(){
-            console.log(909)   
+            
             //用户名  不能为空  长度5-14  字母数字下划线开头
             if($(this).val() == ''){
                 $(this).next(".error").html("用户名不能为空");
@@ -42,6 +50,23 @@ var index = {
             } else {
 
                 $(this).next('.error').html('');
+
+                $.get('http://localhost/common/checkname.php', {
+                        name: dom.yys.val()
+                    }, function(data) {
+
+                        if (data && data.code == 0) {
+                            isName = true;
+                           
+                        } else {
+
+                            dom.yys.next(".error").html("用户名已存在");
+                            isName = false;
+                            isExit = true;
+                        }
+
+                }, 'json');
+                return false;
             }
             
         });
@@ -61,7 +86,9 @@ var index = {
                 $(this).next(".error").html("密码在6-16位");
                 return false;
             } else {
+
                 $(this).next('.error').html('');
+                isPass = true;
             }
 
         });
@@ -73,6 +100,7 @@ var index = {
                 return false;
             }else{
                 $(this).next('.error').html('');
+                isCertain = true;
             }
         });
 
@@ -104,18 +132,18 @@ var index = {
                     nTop = dom.slide.height() - dom.slider.height();
                 }
 
-                dom.slider.css({left:nLeft,top:nTop - 1});
+                dom.slider.css({left:nLeft,top:nTop});
                 dom.empty.width(nLeft);
                 if(nLeft == dom.slide.width() - dom.slider.width()){
 
                     dom.empty.html("通过验证").css({textAlign:'center',color:"#fff"});
                     dom.sub.css({background:"#f63"});
-                    
+                    dom.slider.off("mousedown");
+                    isSlide = true;
                 }
             })
-            dom.slider.mouseup(function(){
+            $(document).mouseup(function(){
                 dom.slide.off('mousemove');
-                // console.log(dom.slide.mousemove);
             })
             
         })
@@ -142,10 +170,55 @@ var index = {
         dom.inp.blur(function(){
 
             if($(this).val().toUpperCase() == dom.num){
-                console.log($(this).next(".error"))
+
                 $(this).parent().find(".error").html("验证成功").css({color:"green"});
+                eCode = true;
             }else{
                 $(this).parent().find(".error").html("验证码错误");
+            }
+        })
+
+
+        //用户注册验证ajax
+        dom.read = $(".read input");
+        dom.sub.click(function(){
+
+            var usn = $(".yys").val();
+            var psw = $(".mm").val();
+            
+            if(isName == false && isExit == true){
+                alert("用户名已存在");
+            }else if(isName == false){
+                alert("用户名不能为空");
+            }else if(isPass == false){
+                 alert("密码不能为空");
+            }else if(isCertain == false){
+                 alert("密码不正确");
+            }else if(isSlide == false){
+                alert("请通过解锁验证");
+            }else if(eCode == false){
+                 alert("验证码错误");
+            }else if(dom.read.prop("checked") !=true){
+                alert("请阅读协议并同意后才能注册");
+            }else{
+                
+                $.ajax({
+
+                    type:"post",
+                    url:"http://localhost/common/register.php",
+                    dataType:"json",
+                    data:{name:usn,password:psw},
+                    success:function(data){
+                        if(data && data.code == 0){
+                            alert("注册成功！");
+                            window.location.href = "login.html";
+                        }else if(data.code == 1){
+                            alert("抱歉,用户名已被抢占啦")
+                        }
+                        
+                    }
+
+                })
             }
         })
 

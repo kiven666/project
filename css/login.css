@@ -9,11 +9,15 @@ body,html{background:#f3f2f2;}
 .content-info{width:1190px;height:26px;margin:0 auto;line-height:26px;}
 .fav{width:78px;background:url(../common/tubiao.png) 4px 5px no-repeat;padding-left:26px;}
 .top-mid{width:278px;}
-.top-mid a{margin-left:5px;course:pointer;}
+.top-mid a{margin-left:5px;cursor:pointer;}
 
 .top-right{width:664px;}
 .top-right span{float:left;padding:0 5px;position:relative;}
-.top-right span a:hover{color:#f63;}
+
+#abb a:hover,#shc a:hover{color:#f63;}
+#aaa span a:hover{color:#f63;}
+
+
 .top-right .little_arrow{padding-left:10px;width:63px;}
 .top-right .little_arrow i{display:inline-block;width:10px;height:6px;background:url(../common/tubiao.png) 3px -27px;}
 #shopNum{float:none;}
@@ -31,7 +35,7 @@ body,html{background:#f3f2f2;}
 .myKede li{text-align:center;}
 
 
-/*=========  logo閮ㄥ垎  ===========*/
+/*=========  logo部分  ===========*/
 
 .welcom{width:100%;}
 
@@ -48,7 +52,7 @@ body,html{background:#f3f2f2;}
 .welcom .wel_top .newMan a{float:right;color:#6c9d03;font-size:12px;}
 .welcom .wel_top .newMan em{float:right;color:#666;font-size:12px;font-weight:100;}
 
-/*======    鐧诲綍鐣岄潰   =======*/
+/*======    登录界面   =======*/
 
 .box{height:398px;border: 1px solid #ccc;background:#fff;position: relative;}
 .box .box_left{margin-top:50px;width:490px;height:298px;border-right:1px solid #ccc;float:left;}
@@ -75,6 +79,10 @@ body,html{background:#f3f2f2;}
 .qq .zhi{background:#ccc url(../common/allbgs.png) -80px -74px no-repeat;}
 
 
+.qq .qq1:hover{background:#f63 url(../common/allbgs.png) 0 -107px no-repeat;}
+.qq .weibo:hover{background:#f63 url(../common/allbgs.png) -40px -74px no-repeat;}
+.qq .zhi:hover{background:#f63 url(../common/allbgs.png) -80px -74px no-repeat;}
+
 /*==========   footer  =========*/
 
 .footer{width:100%;}
@@ -88,7 +96,7 @@ body,html{background:#f3f2f2;}
 
 
 
-/*======================   娉ㄥ唽椤甸潰鏍峰紡    ==========================*/
+/*======================   注册页面样式    ==========================*/
 
 .left_box{width: 490px;margin-top:30px;float:left;}
 .left_box .wocao{width:340px;margin:0 auto;}
@@ -114,7 +122,7 @@ body,html{background:#f3f2f2;}
 
 .right_box{float:left;width:490px;margin-top:46px;border-left:1px solid #ccc;}
 
-.slide{width:238px;height:30px;border:1px solid #ccc;position:relative;margin-left:94px;background:#ededed;}
+.slide{width:238px;height:30px;border:1px solid #ccc;position:relative;margin-left:94px;background:#ededed;overflow: hidden;}
 
 .slide .anzhu{width:238px;height:30px;line-height:30px;text-indent:52px;position: absolute;left:0;top:0;}
 .slide .empty{width:0;background:#8fc31f;height:30px;line-height:30px;position:absolute;left:0;top:0;overflow: hidden;}

@@ -17,7 +17,7 @@ a,button{cursor:pointer;-webkit-appearance: none;-webkit-tap-highlight-color: rg
 input[type="button"],input[type="submit"]{-webkit-appearance: none;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
 del,ins,u,s,a,a:hover{text-decoration:none;}
-body,textarea,input,button,select,keygen,legend{font:14px/1.14 Microsoft Simhei,"黑体",Micorsoft Yahei,Helvetica,"Heiti SC","Droid Sans","Droidsansfallback",sans-serif;color:#333;outline:0;}
+body,textarea,input,button,select,keygen,legend{font:14px/1.14 Microsoft Simhei,"微软雅黑",Micorsoft Yahei,Helvetica,"Heiti SC","Droid Sans","Droidsansfallback",sans-serif;color:#333;outline:0;}
 html{font-size: 100px; height: 100%; min-width: 320px; min-height: 568px;}
 /*body{font-size: 14px; min-width: 320px; max-width: 740px; min-height: 100%; background-color: #fff; margin-left: auto; margin-right: auto;}*/
 /*a,a:hover{color:#333;}*/

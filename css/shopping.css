@@ -1,0 +1,78 @@
+.shop_logo{width:100%;height:135px;background:#fff;}
+.shop_logo .shop_kede{width:998px;margin:0 auto;padding-top: 20px;height:80px;position: relative;}
+.shop_kede h1{width:195px;height:56px;position: absolute;bottom:20px;left:0;}
+.shop_kede h1 a{width:100%;height:100%;}
+.shop_kede .mycar{width:90px;height:57px;position: absolute;left:205px;top:29px;line-height:57px;font-size:18px;color:#666;}
+.shop_kede .three_step{width:490px;height:28px;background:url(../images/step.png) no-repeat;overflow: hidden;position: absolute;top:39px;right:0;}
+.shop_kede span{position: absolute;color:#666;top:65px;}
+.shop_kede .car_1{right:380px;}
+.shop_kede .car_2{right:210px;}
+.shop_kede .car_3{right:45px;}
+
+
+
+/*=======  物品选择区域   ==========*/
+.contain_main{width:100%;background:#fff;}
+
+.nit{width:996px;margin:0 auto;position:relative;}
+
+.contain_main .contain_box{border:1px solid #ccc;width:996px;margin:0 auto;}
+
+.contain_main .goodList{width:996px;height:30px;line-height:30px;background: #f9f9f9;display: none;margin:0 auto}
+.contain_main .goodList li{float:left;text-align:center;}
+.contain_main .goodList li div{width:110px;height:30px;}
+.contain_main .goodList .product{width:420px;}
+.cart_null{width:989px;height:180px;padding-top:10px;line-height:20px;}
+
+.cart_null_next{width:400px;margin:50px 0 0 320px;font-size:14px;}
+.cart_null_next i{display: inline-block;width:43px;height:38px;background:url(../common/tubiao.png) -337px -357px no-repeat;float:left;margin-right:20px;}
+.cart_null_next a{color:#690;font-size:12px;}
+
+/*结算*/
+.jiesuan{width:494px;position: relative;margin-top:20px;border:1px solid #ccc;height:41px;line-height:41px;}
+.jiesuan .ticket_i{width:15px;height:15px;cursor: pointer;margin:13px 10px 0 20px;background:url(../common/tubiao.png) -89px -911px no-repeat;float:left;}
+.jiesuan .youhui{float:left;}
+.jiesuan .ticket_select{width:240px;height:22px;border:1px solid #ccc;float: left;margin:8px 15px 0 15px;}
+.jiesuan .ticket_select_i{width:22px;height:22px;background:url(../common/tubiao.png) -124px -911px no-repeat;float:right;}
+.jiesuan .ticket_select_ipt{width:217px;height:22px;float:left;border:0;text-align: center;}
+.jiesuan .sure{width:70px;height:24px;float:left;margin-top:8px;background: #f63;color:#fff;text-align:center;border-radius:4px;line-height:24px;}
+
+/*======  计算位置   ======*/
+.account{width:990px;margin-top:40px;text-align:right;color:#666;margin:0 auto}
+.total_good{height:24px;text-align:right;}
+.total_good .total_mn{float:right;width:120px;}
+.total_good .total_price{float:right;width:90px;}
+.total_good  .total_ge{float:right;}
+
+.sales,.liquan{width:990px;height:24px;text-align:right;}
+.sales .jiage,.liquan .jiage{width:120px;float:right;}
+.sales .cuyou,.liquan .cuyou{float:right;}
+.jiage{color:#f63;}
+
+.qujiesuan{width:990px;padding:15px 0 8px 0;border-top:1px solid #ccc;margin-top:15px;line-height:40px;margin:0 auto}
+.qujiesuan .go_js{float:right;width:190px;height:34px;line-height:34px;background:#f63;text-align:center;color:#fff;font-size:16px;border-radius:4px;}
+.qujiesuan .go_js i{font-size:16px;color:#fff;line-height:34px;font-weight:100;}
+
+.qujiesuan .zj{float:right;}
+.qujiesuan .zj label{font-size:14px;color:#f63;}
+.qujiesuan .zj .total_money{font-size:20px;color:#f63;margin-right:20px;}
+
+
+/*=======  猜你喜欢 推荐  ========*/
+.recomment{width: 100%;background:#fff;height:339px;padding:49px 0 80px 0;}
+.tuijian_good{width:988px;height:290px;position:relative;top:29px;left:0;margin:30px auto 50px auto;border:1px solid #ccc;overflow: hidden;}
+.tuijian_good .many{left:0;top:0;position: absolute;overflow:hidden;}
+.tuijian_good .many li{height:260px;width:187px;float:left;padding:0 5px 30px 5px;height:260px;}
+
+.tuijian_good .many li ._blank{color:#333;}
+.tuijian_good .many li ._blank img{width:180px;height:180px;margin:0 3px;}
+.tuijian_good .many li .jge{color:#f63;text-align:center;}
+.tuijian_good .many li .jieshao{height:40px;font-size:12px;text-align:center;line-height:20px;}
+.tuijian_good .many li .jieshao a{color:#333;}
+
+.lie{position:absolute;left:-1px;top:-30px;border-left:1px solid #ccc;}
+.lie li{width:98px;height:28px;line-height:28px;text-align:center;border:1px solid #ccc;float:left;border-left-width:0;}
+.lie .guss{border-bottom-color:#fff;border-left-width:0;color:#f64;font-weight:800;}
+
+.leftArrow,.rightArrow{position:absolute;width:20px;height:40px;top:50%;left:0;background:rgba(0,0,0,.2);line-height:40px;text-align:center;font-size:16px;color:#fff;margin-top:-20px;}
+.rightArrow{right:0;left:auto;}

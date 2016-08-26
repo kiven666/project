@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车结算页面</title>
+</head>
+<link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" type="text/css" href="../common/common.css">
+<link rel="stylesheet" href="../css/shopping.css">
+
+<script src="../common/jquery-1.10.2.min.js"></script>
+<script src="../common/common.js"></script>
+
+<script src="../common/myjs.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/shopping.js"></script>
+
+<body>
+    <!--顶部-->
+    <div id="topHead">
+        <div class="content-info">
+            <div id="shc" class="fav left"><a class="hov" href="#">收藏可得网</a></div>
+            <div id="abb" class="top-mid left">您好，欢迎光临可得眼镜网!<a class="hov" href="#">登录</a><a class="hov" href="#">[免费注册]</a></div>
+            <div id="aaa" class="top-right right">
+                <span><a class="hov" href="#">我的礼券</a></span>
+                <span class="little_arrow"><a href="#">我的可得</a><i></i>
+                    <ul class="myKede"><li><a href="javascript:void(0);">我的订单</a></li>
+                    <li><a href="javascript:void(0);">我的收藏</a></li>
+                    <li><a href="javascript:void(0);">积分兑换</a></li>
+                    <li><a href="javascript:void(0);">我的验光单</a></li></ul>
+                </span>
+                <span class="little_arrow"><a href="#">帮助中心</a><i></i>
+                    <ul class="myKede">
+                        <li><a href="javascript:void(0);">常见问题</a></li>
+                        <li><a href="javascript:void(0);">退货换货</a></li>
+                        <li><a href="javascript:void(0);">快递查询</a></li>
+                        <li><a href="javascript:void(0);">眼镜学堂</a></li>
+                        <li><a href="javascript:void(0);">礼券使用</a></li>
+                        <li><a href="javascript:void(0);">投诉建议</a></li>
+                        <li><a href="javascript:void(0);">网站地图</a></li>
+                    </ul>
+                </span><span>|</span>
+                <span class="shop_car">
+                    <a class="hov" href="#">购物车<span id="shopNum">0</span>件</a> 
+                </span>
+                <span class="phone hov"><a href="#">手机版</a><i></i></span>
+                <span class="tel"><a href="#"><i></i>客服电话:4006-20-20-20（9:00-23:45）</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!--===      内容区         ==-->
+    <div class="shop_logo">
+        <div class="shop_kede">
+            <h1><a href="javascript:void(0);"><img src="../images/kede_logo.gif" alt=""></a></h1>
+            <p class="mycar">我的购物车</p>
+            <div class="three_step"></div>
+            <span class="car_1">我的购物车</span>
+            <span class="car_2">订单信息详情</span>
+            <span class="car_3">成功提交订单</span>
+        </div>
+    </div>
+
+    <div class="contain_main">
+        <div class="nit">
+            <div class="contain_box">
+                <ul class="goodList">
+                    <li><div class="product">商品</div></li>
+                    <li><div class="lumo"></div></li>
+                    <li><div class="quality">数量</div></li>
+                    <li><div class="price_1">单价(元)</div></li>
+                    <li><div class="xiaoji">小计(元)</div></li>
+                    <li><div class="operation">操作</div></li>
+                </ul>
+                <div class="cart_null">
+                    <div class="cart_null_next">
+                        <i></i>
+                        您的购物车是空的哦~，去挑选喜欢的商品吧!
+                        <br>
+                        <a href="javascript:void(0);">去选购 >></a>
+                    </div>
+                </div>      
+            </div>
+            
+            <div class="jiesuan">
+                <i class="ticket_i"></i>
+                <p class="youhui">使用优惠券：</p>
+                <div class="ticket_select">
+                    <i class="ticket_select_i"></i>
+                    <input type="text" class="ticket_select_ipt" value="--请选择或输入礼券号--">
+                </div>  
+                <div class="sure">确定</div>
+                <div class="ticket_alert"></div>
+            </div>
+
+            <div class="account f-cb">
+                <div class="total_good">
+                    <div class="total_mn">￥<span class="jg">0.00</span></div>
+                    <div class="total_price">商品总价：</div>
+                    <div class="total_ge">共<span class="shuliang">0</span>件商品</div>
+                </div>
+                <div class="sales">
+                    <div class="jiage">-￥<span class="xuxiao">0.00</span></div>
+                    <div class="cuyou">促销优惠：</div>
+                </div>
+                <div class="liquan">
+                    <div class="jiage">-￥<span class="xuxiao">0.00</span></div>
+                    <div class="lq_name">促销优惠：</div>
+                </div>
+                
+                <div class="qujiesuan">
+                    <div class="go_js">去结算<i> ></i></div>
+                    <div class="zj">总计(不含运费):  <b><label>￥ </label><span class="total_money">0.00</span></b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--========   推荐 猜你喜欢    =========-->
+    <div class="recomment">
+        <div class="tuijian_good">
+            <ul class="many">
+                <li>    
+                    <a class="_blank" href="javascript:void(0);"><img src="../images/li1.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>4.80</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">洁达隐形伴侣盒A-9008黄色</a></p>
+                </li>
+                <li>    
+                    <a href="javascript:void(0);"><img src="../images/li2.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>40.00</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">博士伦晴朗一日水润高清日抛隐形眼镜5片装</a></p>
+                </li>
+                <li>    
+                    <a href="javascript:void(0);"><img src="../images/li3.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>48</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">洁达隐形伴侣盒A-9008黄色</a></p>
+                </li>
+                <li>    
+                    <a href="javascript:void(0);"><img src="../images/li4.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>68</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">博士伦晴朗一日水润高清日抛隐形眼镜5片装</a></p>
+                </li>
+                <li>    
+                    <a href="javascript:void(0);"><img src="../images/li5.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>4.80</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">博士伦晴朗一日水润高清日抛隐形眼镜5片装</a></p>
+                </li>
+                <li>    
+                    <a href="javascript:void(0);"><img src="../images/li3.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>4.80</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">洁达隐形伴侣盒A-9008黄色</a></p>
+                </li>
+                <li>    
+                    <a href="javascript:void(0);"><img src="../images/li4.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>4.80</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">博士伦晴朗一日水润高清日抛隐形眼镜5片装</a></p>
+                </li>
+                <li>    
+                    <a href="javascript:void(0);"><img src="../images/li5.jpg" alt=""></a>
+                    <p class="jge"><b>￥</b>4.80</p>
+                    <p class="jieshao"><a href="javascript:void(0:;">博士伦晴朗一日水润高清日抛隐形眼镜5片装</a></p>
+                </li>
+            </ul>   
+            
+            <a href="javascript:void(0);" class="leftArrow">&lt;</a>
+            <a href="javascript:void(0);" class="rightArrow">&gt;</a>
+    
+            <ul class="lie">
+                <li class="guss">猜你喜欢</li>
+                <li>我的收藏</li>
+                <li>最近浏览</li>
+                <li>回收站</li>
+                
+            </ul>
+
+        </div>
+        
+
+
+    </div>
+
+
+
+
+    
+    <!--===      底部         ==-->
+    <div class="footer">
+        <div class="all">
+            <div class="foot_top">
+                <p><a href="javascript:void(0);">首页</a><span>|</span>
+                <a href="javascript:void(0);">联系我们</a><span>|</span>
+                <a href="javascript:void(0);">友情链接</a><span>|</span>
+                <a href="javascript:void(0);">眼镜知识</a><span>|</span>
+                <a href="javascript:void(0);">眼镜百科</a><span>|</span>
+                <a href="javascript:void(0);">网站地图</a><span>|</span>
+                <a href="javascript:void(0);">隐私安全</a></p>
+                <div>Copyright? 2006-2016 可得眼镜 KEDE.com 版权所有 沪ICP备09062956号 全国服务热线：4006-20-20-20</div>
+            </div>
+            <div class="foot_bootom">
+                <a href="javascript:void(0);"><img src="../images/a1.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../images/a2.png" alt=""></a>
+                <a href="javascript:void(0);"><img src="../images/a3.png" alt=""></a>
+                <a href="javascript:void(0);"><img src="../images/a4.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../images/a5.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../images/a6.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../images/a7.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
