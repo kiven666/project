@@ -2,15 +2,15 @@
 header('Content-type: text/html;charset=utf-8');
 
 $name = $_GET['name'];      // 通过get请求传递过来的name值
-$pass  = $_GET['password'];  // 通过get请求传递过来的密码
+// $pass  = $_GET['password'];  // 通过get请求传递过来的密码
 
-$pass = md5($pass);
+// $pass = md5($pass);
 
 
 // 创建连接
 $conn = new mysqli('localhost', 'root', '', 'library');
 
-$sql = "select a_nickname from l_admin where a_name='$name' and a_pwd='$pass'";     // sql语句     查询l_admin表中的a_nickname字段
+$sql = "select username from yanzhen where username='$name'";     // sql语句     查询l_admin表中的a_nickname字段
 
 $conn->query('set names utf8');
 
@@ -19,14 +19,14 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 
-    $nickname = $result->fetch_assoc();
-    $nickname = $nickname['a_nickname'];
+    $username = $result->fetch_assoc();
+    $username = $username['username'];
 
     $data = array(
         'code' => 0,
         'msg'  => '登录成功！',
         'data' => array(
-            'nickname' => $nickname
+            'username' => $username
         )
     );
 
@@ -40,3 +40,4 @@ if ($result->num_rows > 0) {
 
     echo json_encode($data);
 }
+$conn->close();

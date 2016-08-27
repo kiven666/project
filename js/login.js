@@ -65,19 +65,29 @@ $(function(){
 
     $(".denglu").click(function(){
 
-        if(username.val()!="" && password.val()!=""){
-
-            if(remember.prop("checked")==true){
+        if(username.val() != "" && password.val() != ""){
+            $.get("http://localhost/common/login.php",{name:username.val()},function(data){
                 
-                setCookie("username",username.val(),7);
-                setCookie("password",password.val(),7);
-            }
-            alert("登录成功");
-        }else{
-            alert("请输入完整用户名")
-        }
+                if(data && data.code == 1){
+    
+                    alert("用户名已存在,请注册新的用户");
+
+                }else if(data.code == 0){
+
+                    if(remember.prop("checked") == true){
         
+                        setCookie("username",username.val(),7);
+                        setCookie("password",password.val(),7);
+                    }
+                    alert("登录成功");
+                    window.open("http://localhost/index.html");
+
+                }
+
+            },"json")
+        }
     })
 
 
 })
+

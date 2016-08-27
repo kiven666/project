@@ -11,6 +11,7 @@
 <script src="../common/jquery-1.10.2.min.js"></script>
 <script src="../js/magnifier.js"></script>
 <script src="../js/firstPage.js"></script>
+<script src="../common/common.js"></script>
 
 <body>
     <!--=======  头部  ===========-->
@@ -27,7 +28,7 @@
                     <a href="javascript:void(0);">登录</a>/<a href="javascript:void(0);">注册</a>
                 </li>
                 <li class="car">
-                    <a href="javascript:void(0);">购物车</a><span class="carCnt">(0)</span>
+                    <a href="javascript:void(0);">购物车</a>(<span class="carCnt">0</span>)
                 </li>
                 <li class="zancun">
                     <a href="javascript:void(0);">暂存架</a><span class="sheet">(0)</span>
@@ -49,7 +50,7 @@
             <div class="whole">
                 <div class="magnifier">
                     <div class="smallPic">
-                        <img src="../images/lunbo_3.jpg" alt="">
+                        <img class="copyImg" src="../images/lunbo_3.jpg" alt="">
 
                     </div>
                     <div class="block"></div>
@@ -62,7 +63,7 @@
 
                 <div class="details">
                     <div class="det_first">
-                        <strong>Floral Open Kimono Robe</strong>
+                        <strong class="choiceName">Floral Open Kimono Robe</strong>
                         <p class="meili">♥ 착한 가격 ♥ 여름 필수 아이템 !</p>
                         <p class="meili">♥ 价格美丽♥夏季必备产品！</p>
                         <p class="three_bac">
@@ -76,7 +77,7 @@
                         <div class="huiyuan">钻石会员￥86/宝石会员￥87翡翠会员/￥89/水晶会员￥91 <a href="javascript:void(0);">查看会员规则</a></div>
                     </div>
 
-                    <div class="sales">售价：￥93 <span>(积分￥1)</span></div>
+                    <div class="sales">售价：<i class="rmb">￥93</i> <span>(积分￥1)</span></div>
                     <div class="selectColor">
                         颜色：<select name="请选择颜色" id="color">
                             <option value="请选择颜色">请选择颜色</option>
@@ -91,8 +92,7 @@
                             
                         </select>
                     </div>
-                    <div class="count">数量：  
-                        <input type="text" value="1">
+                    <div class="count">数量：<input class="shul" type="text" value="1">
                         <a class="reduce" href="javascript:void(0);"></a><a class="plus" href="javascript:void(0);"></a>
                     </div>
                     <div class="buy">
@@ -654,10 +654,10 @@ Gangnam-daero, Gangnam-gu, Seoul, Korea</p>
         <ul class="buyIt">
             <li class="b1"><a class="login" href="javascript:void(0);">登录/</a><a class="zhuce2" href="javascript:void(0);">注册</a></li>
             <li class="b2">
-                <a href="javascript:void(0);"></a>购物车<span>(0)</span>
+                <a href="javascript:void(0);"></a>购物车(<span class="plusOne">0</span>)
             </li>
             <li class="b3">
-                <a href="javascript:void(0);"></a>暂存架<span>(0)</span>
+                <a href="javascript:void(0);"></a>暂存架(<span class="addOne">0</span>)
             </li>
         </ul>
         

@@ -108,4 +108,33 @@ $(function(){
         $(this).find("p").hide();
     })
 
+
+    /*var use = getCookie("username");
+    if(use !="" && use !=null){
+        console.log(1);
+        $("#yonghuming").html('你好');
+    }*/
+    //点击登录 到登录页面
+    $("#_denglu1").click(function(){
+        location.href = "http://localhost/html/login.html";
+    })
+
+    //点击图片到详情页面
+    $(".detail_img").click(function(){
+        localhost.href = "http://localhost/js/details.html";
+    })
+
+
+
+
+    $(function(){
+        var _user = getCookie('username');
+        //console.log(_user);
+        if(_user != "" && _user != null){
+           
+        }else{
+          
+        }
+    })
+
 })

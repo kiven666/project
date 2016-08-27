@@ -79,7 +79,9 @@
 .sales span{color:#999;}
 .selectColor,.selectSize{width:515px;height:38px;font-size:16px;line-height:38px;}
 .selectColor select,.selectSize select{width:320px;height:30px;}
+
 .count{width:515px;height:38px;font-size:16px;line-height:38px;}
+
 .count input{width:55px;height:30px;text-align:center;line-height:30px;display: inline-block;}
 .count a{display: inline-block;width:20px;height:30px;margin-top:5px;}
 .count .reduce{background:url(../images/add_subtract.png) 0 6px no-repeat;margin-right:4px;}

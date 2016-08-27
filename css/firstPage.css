@@ -2,6 +2,13 @@
 
 
 /*========= 轮播图片区  ==========*/
+#_denglu1:hover{color:#f63;}
+._hide{
+    display: none;
+}
+._block{
+    display: block;
+}
 
 #main_top{
 /*    background:#abcdef;*/

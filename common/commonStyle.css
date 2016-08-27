@@ -425,6 +425,8 @@
 .side_bar .buyIt .b3{
      background:url(../common/img.png) 0 -314px;
 }
+.side_bar .buyIt .b1 a,.biubiu{color:#333;}
+.side_bar .buyIt .b1 a:hover,.side_bar .buyIt .b2 a:hover{cursor:pointer;}
 
 .side_bar .msg{
     width:100px;

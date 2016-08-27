@@ -13,6 +13,7 @@ var index = {
         dom.prev = $(".leftArrow");
         dom.next = $(".rightArrow");
         dom.width = $(".tuijian_good").width();
+        dom.goShop = $(".go_shop");
 
     },
 
@@ -46,22 +47,27 @@ var index = {
             var nowLeft = dom.many.position().left;
             console.log(nowLeft)
             var ansower = nowLeft + oneStep;  
-             console.log(ansower)
-            if(nowLeft <= 0){
+            console.log(ansower)
+            if(nowLeft >= 0){
                
                 dom.many.position().left = 0;
             }else{
 
                 dom.many.animate({left:ansower});
-                
+
             }
         })
 
+     //点击 去购物
+        dom.goShop.click(function(){
+            location.href = "http://localhost/index.html";
+        })
     }
-
+    
 
 }
 
 $(function(){
     index.init();
+
 })

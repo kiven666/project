@@ -8,8 +8,6 @@
 <link rel="stylesheet" type="text/css" href="common/common.css">
 <link rel="stylesheet" type="text/css" href="common/commonStyle.css">
 
-<script src="common/jquery-1.10.2.min.js"></script>
-
 
 <body>
 
@@ -22,8 +20,9 @@
                 <li class="beauty"><a href="#">美妆区</a></li>
             </ul>
             <ul class="sign_in">
-                <li class="zhuce">
-                    <a href="#">登录</a>/<a href="#">注册</a>
+                <li id="_zhuce1" class="zhuce">
+                    <span id="yonghuming"></span>
+                    <a id="_denglu1" href="#">登录</a>/<a href="#">注册</a>
                 </li>
                 <li class="car">
                     <a href="#">购物车</a><span class="carCnt">(0)</span>
@@ -89,7 +88,7 @@
                         <span>￥167</span>
                     </p>
                 </li>
-                <li class="li4"><a href="#"><img src="images/dress_2.jpg" alt=""></a>
+                <li class="li4"><a class="detail_img" href="http://localhost/html/details.html"><img src="images/dress_2.jpg" alt=""></a>
                     <p class="pos2">
                         <span>여리함이 돋보이는프숄더 티 !!!</span>
                         <span>果、十分精致亮眼!!!</span>
@@ -915,7 +914,10 @@ Gangnam-daero, Gangnam-gu, Seoul, Korea</p>
     <!--=======  点击回到顶部  top  ==========-->
     <a class="back_top" href="#"><span>TOP</span></a>
 
+<script src="common/jquery-1.10.2.min.js"></script>
 <script src="js/firstPage.js"></script>
+<script src="common/common.js"></script>
+
 
 </body>
 </html>
