@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../common/common.css">
+<link rel="stylesheet" type="text/css" href="../common/commonStyle.css">
+<link rel="stylesheet" type="text/css" href="../css/details.css">
+<link rel="stylesheet" type="text/css" href="../css/account.css">
+
+<script src="../common/jquery-1.10.2.min.js"></script>
+<script src="../js/magnifier.js"></script>
+<script src="../js/firstPage.js"></script>
+<script src="../common/common.js"></script>
+
+
+<body>
+    <!--=======  头部  ===========-->
+    <div id="header">
+        <div class="header_content">
+            <h1><img src="../images/logo.png" alt="时尚起义"></h1>
+            <ul class="select">
+                <li class="wormans"><a href="javascript:void(0);">女装区</a></li>
+                <li class="mans"><a href="javascript:void(0);">男装区</a></li>
+                <li class="beauty"><a href="javascript:void(0);">美妆区</a></li>
+            </ul>
+            <ul class="sign_in">
+                <li class="zhuce">
+                    <a href="javascript:void(0);">登录</a>/<a href="javascript:void(0);">注册</a>
+                </li>
+                <li class="car">
+                    <a href="javascript:void(0);">购物车</a>(<span class="carCnt">0</span>)
+                </li>
+                <li class="zancun">
+                    <a href="javascript:void(0);">暂存架</a><span class="sheet">(0)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="wraper">
+        <h1>确认订单信息</h1>
+        <div class="buy_receive">
+            <h2>收货人信息</h2>
+            <div class="allMsg">
+                <p class="oneMsg">
+                    <span class="nickName">哥哥不太乖</span>
+                    <span>广东省</span>
+                    <span>广州市</span>
+                    <span>天河区</span>
+                    <span>元岗村</span>
+                    <span>16552343333</span>
+                </p>
+                <div class="addAddress">
+                    <a class="down_arr" href="javascript:void(0);">更多地址<i></i></a>
+                    <a href="javascript:void(0);">新增收货地址 +</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="distribution">
+            <h2>配送方式/时间</h2>
+            <div class="dis_detail">
+                <div class="yuant">
+                    <p>配送方式：圆通国际</p>
+                    <p>基本配送费用：7元</p>
+                    <p>国际配送费用：35元【说明】</p>
+                </div>
+                <div class="_reduce">
+                    <p>时尚起义已由韩国总部直接运营采用直邮模式发货，商品由韩国直接发往顾客收货地址。</p>
+                    <p>由于直购商品的特殊性，配送时间为3~6个工作日。</p>
+                    <p>跨境配送实际会产生大量的国际往返费和关税，但我们目前仅收取国内配送运费，因此时尚起义规定：</p>
+                    <p>[订单退货数量5件及以上] [总退货量超过订购量50%] 的“大量退货”行为将扣除退货金额10%的退货手续费。</p>
+                    <p>长期频繁大量退货将列入恶意退货黑名单取消会员资格不再交易。</p>
+                    <p>订购前请您仔细阅读相关条款，谨慎下单，一旦支付成功将默认为同意此规定了哦。</p>
+                    <p>祝您购物愉快！</p>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="payway">
+            <h2>支付方式</h2>
+            <div class="alipay">
+                <span class="alipay_logo">alipay</span>
+                <span>直购商品只可使用支付宝</span>
+            </div>
+        </div>
+
+        <div class="dinghuo_msg">
+            <h2>订货信息</h2>
+            <div class="buy_body f-cb">
+                <a href="javascript:void(0);"><img src="../images/sungsing.jpg" alt="" target="blank"></a>
+                <div class="buy_body_detail">
+                    <p class="pinming">品名：Off The Shoulder Loose Fit Tee</p>
+                    <p>原价：￥<span class="yuanjia">93</span></p>
+                    <p class="manao">玛瑙会员0%：￥<span class="huiyuan">93</span></p>
+                    <p>积分￥<span class="jifen"></span></p>
+                </div>
+                <p class="color_size">姜黄色/ONE SIZE</p>
+                <p class="how">x1</p>
+                <p class="qian">￥<span class="dolla">93</span></p>
+            </div>
+        </div>
+
+        <!--=======   订单金额    ========-->
+        <div class="dingdan_money">
+            <h2>订单金额</h2>
+            <ul class="je">
+                <li> <p>商品金额</p> <span>￥<i>93</i></span></li>
+                <li> <p>基本配送费用</p> <span>+ ￥<i>7</i></span></li>
+                <li> <p>附加配送费<a href="javascript:void(0);">【说明】</a></p> <span>+ ￥<i>0</i></span></li>
+                <li> <p>国际配送费<a href="javascript:void(0);">【说明】</a></p> <span>+ ￥<i>35</i></span></li>
+            </ul>
+        </div>    
+        
+        <!--=======   折扣金额    ========-->
+        <div class="dingdan_money">
+            <h2>折扣金额</h2>
+            <ul class="je">
+                <li> <p>会员等级优惠</p> <span>￥<i>0</i></span></li>
+                <li> <p>优惠券</p> <span>￥<i>0</i></span></li>
+
+                <li> <p>积分</p><div><select name="" id="sel"><option value="--没有可以使用的礼券/抵用券--">--没有可以使用的礼券/抵用券--</option></select> 特价商品和美妆商品不可使用优惠券</div><span>- ￥<i>0</i></span></li>
+
+                <li> <p>积分</p><div><input type="text" value="0"> 元(您的账户中有: <em class="five_yuan">5</em>元 积分，本次最多可使用的积分为<em class="five_yuan">5</em>元)</div> <span>- ￥<i>0</i></span></li>
+
+                <li class="bt_none"> <p>预付款</p><div><input type="text" value="0"> 元(您的账户中有: <em class="five_yuan">0</em>元 预付款，本次最多可使用的预付款为<em class="five_yuan">0</em>元)</div> <span>- ￥<i>0</i></span></li>
+            </ul>
+            
+        </div>   
+        <h2 class="oh_h2">订单支付金额<span>￥<i class="final_money">135</i></span></h2>
+        <div class="payIt">
+            <a class="return" href="javascript:void(0);">返回购物车重新选择</a>
+            <a class="rightnow" href="javascript:void(0);">马上结算</a>
+        </div>
+
+    </div>
+
+
+
+
+
+  
+    <!--==========  底部  ===============-->
+
+    <div id="official">
+        <img src="../images/guarantee.jpg" alt="">
+    </div>
+
+    <div id="footer">
+
+        <div class="foot_main">
+            <div class="foot_left">
+                <p class="allCenter">CALL CENTER</p>
+                <h3>400 818 4371</h3>
+                <p class="restTime">8:00AM~17:00PM/午休 12:00~13:00PM<br/>周六、法定节假日休息</p>
+               
+
+                <p class="returnAdress">退货地址：上海市闵行区万源路2158号 泓毅大厦413室<br/>邮编：201103</p>
+ 
+                <p class="address">DAHONG&ZINIF Co., Ltd. / (10F, URBANHIVE BLDG. Nonhyeon-dong) 476.
+Gangnam-daero, Gangnam-gu, Seoul, Korea</p>
+                <p class="police">通信营业备案 : 第2011-首尔江南-03049号 / 注册文件号码 211-88-67647</p>
+                <p class="police">代表理事 : 李东桓 / 隐私保护负责人 : 朴竟墅</p>
+            </div>
+            <div class="foot_right">
+                <div class="fr_top f-cb">
+                    <div class="newMan">
+                        <h3>新手上路</h3>
+                        <ul>
+                            <li>><a href="javascript:void(0);">怎样下订单</a></li>
+                            <li>><a href="javascript:void(0);">会员等级制度</a></li>
+                            <li>><a href="javascript:void(0);">积分&优惠券</a></li>
+                        </ul>
+                    </div>
+                    <div class="newMan">
+                        <h3>关于订购</h3>
+                        <ul>
+                            <li>><a href="javascript:void(0);">支付方式</a></li>
+                            <li>><a href="javascript:void(0);">配送时间</a></li>
+                            <li>><a href="javascript:void(0);">配送费用</a></li>
+                        </ul>
+                    </div>
+                    <div class="newMan">
+                        <h3>帮助中心</h3>
+                        <ul>
+                            <li>><a href="javascript:void(0);">找回密码</a></li>
+                            <li>><a href="javascript:void(0);">常见问题</a></li>
+                            <li>><a href="javascript:void(0);">公告栏</a></li>
+                        </ul>
+                    </div>
+                    <div class="newMan">
+                        <h3>售后服务</h3>
+                        <ul>
+                            <li>><a href="javascript:void(0);">退货政策</a></li>
+                            <li>><a href="javascript:void(0);">退货申请</a></li>
+                            <li>><a href="javascript:void(0);">留言&回复</a></li>
+                        </ul>
+                    </div>
+                    <div class="newMan another">
+                        <h3>关于我们</h3>
+                        <ul>
+                            <li>><a href="javascript:void(0);">平台介绍</a></li>
+                            <li>><a href="javascript:void(0);">联系我们</a></li>
+                            <li>><a href="javascript:void(0);">加入我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fr_bot">
+                    <div class="ipt">
+                        <a class="ilove" href="javascript:void(0);">我要女装</a>
+                        <a class="ilove nono" href="javascript:void(0);">我要男装</a>
+                        <input type="text" placeholder="订阅我们的邮件">
+                        <a class="dingyue" href="javascript:void(0);">订阅</a>
+                    </div>
+                    <div class="point">
+                        <p>.新商品数量 <span>209</span> 件</p>
+                        <p>.热卖商品数量 <span>5,002</span> 件</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="foot_pic">
+            <a href="javascript:void(0);"><img src="../images/a1.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img src="../images/a2.png" alt=""></a>
+            <a href="javascript:void(0);"><img src="../images/a3.png" alt=""></a>
+            <a href="javascript:void(0);"><img src="../images/a4.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img src="../images/a5.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img src="../images/a6.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img src="../images/a7.jpg" alt=""></a>
+            <a href="javascript:void(0);"><img src="../images/a8.jpg" alt=""></a>
+        </div>
+
+    </div>
+    
+
+    <!--===========  吸顶导航  =============-->
+    <div class="top_nav">
+        <ul class="show_hide">
+            <li class="qiyi"><a href="javascript:void(0);">时尚起义</a></li>
+            <li><a href="javascript:void(0);">最新商品</a></li>
+            <li><a href="javascript:void(0);">一周爆款</a></li>
+            <li><a href="javascript:void(0);">上衣</a></li>
+            <li><a href="javascript:void(0);">衬衫&罩衫</a></li>
+            <li><a href="javascript:void(0);">外套</a></li>
+            <li><a href="javascript:void(0);">最佳口碑</a></li>
+            <li><a href="javascript:void(0);">半身裙</a></li>
+            <li><a href="javascript:void(0);">连衣裙</a></li>
+            <li><a href="javascript:void(0);">裤装</a></li>
+            <li><a href="javascript:void(0);">鞋&包</a></li>
+            <li><a href="javascript:void(0);">配饰</a></li>
+            <li><a href="javascript:void(0);">内衣</a></li>
+            <li><a href="javascript:void(0);">SUMMER</a></li>
+            <li class="f_50"><a href="javascript:void(0);">美妆</a></li>
+            <li class="hot"><a href="javascript:void(0);">热卖商品</a></li>
+        </ul>
+    </div>
+
+    <!--===========  右侧菜单栏  =============-->
+    <div class="side_bar">
+        <a href="javascript:void(0);" class="biubiu">&gt;</a>
+        <p class="fix">
+            <a class="pa1" href="javascript:void(0);"></a>
+            <a class="pa2" href="javascript:void(0);"></a>
+        </p>
+        
+        <ul class="buyIt">
+            <li class="b1"><a class="login" href="javascript:void(0);">登录/</a><a class="zhuce2" href="javascript:void(0);">注册</a></li>
+            <li class="b2">
+                <a href="javascript:void(0);"></a>购物车(<span class="plusOne">0</span>)
+            </li>
+            <li class="b3">
+                <a href="javascript:void(0);"></a>暂存架(<span class="addOne">0</span>)
+            </li>
+        </ul>
+        
+        <ul class="msg">
+            <li class="lia1"><a href="javascript:void(0);">今日浏览</a></li>
+            <li class="lia2"><a href="javascript:void(0);">关注微信</a></li>
+            <li class="lia3"><a href="javascript:void(0);">常见问题</a></li>
+            <li class="lia4"><a href="javascript:void(0);">1:1留言</a></li>
+        </ul>
+
+        <div class="weixin">
+            <div>
+                <img src="../images/weixin.jpg" alt="">
+            </div>
+            <p>关注时尚起义官方微信</p>
+            <p><strong>潮流&折扣早知道</strong></p>
+        </div>
+
+        <ul class="plane">
+            <li class="zhengpin"></li>
+            <li><a href="javascript:void(0);">100%正品保证</a></li>
+            <li><a href="javascript:void(0);">100%韩国直邮</a></li>
+            <li><a href="javascript:void(0);">100%售后服务</a></li>
+        </ul>
+    </div>
+    
+    <!--=======  点击回到顶部  top  ==========-->
+    <a class="back_top" href="javascript:void(0);"><span>TOP</span></a>
+
+
+
+
+</body>
+</html>

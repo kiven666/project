@@ -1,0 +1,58 @@
+#wraper{width:1100px;padding-left:30px;border-left:1px solid #ccc;margin:0 auto;margin-left:160px;overflow: hidden}
+#wraper h1{margin:70px 0 30px 0;height:40px;line-height:40px;font-size:26px;text-align:center;}
+
+/*收货人信息*/
+.buy_receive{width:1100px;border:1px solid #ccc;margin-bottom:10px;}
+#wraper h2{height:40px;line-height:40px;text-indent:30px;background:#f4f4f4;color:#6f6f6f;border-bottom:1px solid #ccc;}
+.buy_receive .allMsg{padding:20px 0 20px 30px;font-size:14px;}
+.buy_receive .oneMsg{margin-bottom:15px;}
+.buy_receive .oneMsg .nickName{padding:0 20px;height:28px;display: inline-block;text-align:center;line-height:28px;border:1px solid #000;background:url(../images/select_icon.png) right bottom no-repeat;}
+.addAddress a{display: inline-block;height:28px;padding:0 15px;border:1px solid #e2e2e2;line-height:28px;color:#2b2b2b;font-size:12px;}
+.addAddress .down_arr{background:url(../images/arrow_sprite.png) right top no-repeat;padding-right:30px;margin-right:15px;}
+
+/*配送方式/时间*/
+.distribution{border:1px solid #ccc;width:1100px;margin-bottom:10px;}
+.distribution .dis_detail .yuant{padding:20px 0 20px 30px;border-bottom:1px dashed #ccc;}
+.distribution .dis_detail .yuant p{line-height: 38px;height:38px;}
+
+.distribution .dis_detail ._reduce p{line-height: 22px;}
+.distribution .dis_detail ._reduce{padding:20px 0 20px 30px;}
+
+/*支付方式*/
+.payway{border:1px solid #ccc;width:1100px;margin-bottom:10px;}
+.payway .alipay{padding:20px 0 20px 30px;}
+.payway .alipay .alipay_logo{padding:0 20px;line-height:28px;height:28px;text-align:center;border:1px solid #000;display: inline-block;background:url(../images/select_icon.png) right bottom no-repeat;margin-right:16px;}
+
+/*订货信息*/
+.dinghuo_msg{border:1px solid #ccc;width:1100px;color:#6f6f6f;}
+.dinghuo_msg .buy_body{border-bottom:1px dashed #ccc;margin-bottom:-1px;}
+.dinghuo_msg .buy_body a img{float:left;margin:10px 18px 10px 30px;width: 84px;height:116px;}
+.dinghuo_msg .buy_body_detail{width:500px;float:left;height:137px;}
+.dinghuo_msg .buy_body_detail p{line-height:22px;}
+.dinghuo_msg .buy_body_detail .pinming{margin-top:20px;}
+.dinghuo_msg .buy_body_detail .manao{color:#2b2b2b;}
+
+.color_size{width:200px;height:137px;float:left;line-height:137px;}
+.how,.qian{width:120px;height:137px;float:left;line-height:137px;}
+.qian{color:#2b2b2b;}
+
+/*===   金额计算   ==*/
+.dingdan_money{width:1100px;border:1px solid #ccc;border-top:0;}
+.je li{height:40px;line-height: 40px;border-bottom:1px solid #ccc;}
+
+.je .bt_none{margin-bottom:-1px;}
+
+.je li p{width:160px;padding-left:60px;background:url(../images/item_icon.png) 35px center no-repeat;float:left;}
+.je li span{display: inline-block;width:140px;float:right;}
+.dingdan_money .je a{color:#2b2b2b;}
+.dingdan_money .je div{width:700px;float:left;color:#2b2b2b;}
+.dingdan_money .je div em{font-weight:100;color:#2b2b2b;}
+.dingdan_money input{width:38px;height:28px;margin-top:5px;text-align:center;}
+
+.oh_h2{height:40px;line-height:40px;text-indent:30px;background:#f4f4f4;color:#6f6f6f;border:1px solid #ccc;border-top:0;}
+.oh_h2 span{width:160px;height:40px;float:right;text-align:left;line-height:40px;color:#ff4343;}
+
+.payIt{margin:20px 0 100px 0;}
+.payIt a{display: inline-block;width:198px;height:40px;text-align:center;line-height:48px;color:#fff;margin-left:20px;}
+.payIt .return{background:#aeaeae;}
+.payIt .rightnow{background:#3e3e3e;}

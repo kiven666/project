@@ -87,10 +87,9 @@ $(function(){
 
 
     //定义一个数组   储存cookie
-  
-   var arr = getCookie("num");
-   
-    console.log(arr)
+
+   var obj = getCookie("num");
+
 
     if(getCookie("num") == null || getCookie("num") == ""){
      
@@ -160,7 +159,7 @@ $(function(){
            
             //设置cookie
             setCookie("num",arr.join(";"),1);
-            removeCookie("num")
+
             alert("设置成功")
         }
     })    

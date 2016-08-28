@@ -3,12 +3,15 @@
 #header{
     height:125px;
     width:100%;
-    border-bottom:1px solid #ccc;
+    
 }
 .header_content{
-    width:1250px;
+    /*width:1250px;
+    height:125px;*/
     height:125px;
-    margin:0 auto;
+    position:absolute;
+    left:0;right:0;
+  border-bottom:1px solid #ccc;
 }
 .header_content h1{
     width:300px;
