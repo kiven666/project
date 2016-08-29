@@ -88,16 +88,17 @@ $(function(){
 
     //定义一个数组   储存cookie
 
-   var obj = getCookie("num");
-
+   
+   var str = getCookie("num");
+   var arr;
 
     if(getCookie("num") == null || getCookie("num") == ""){
      
         arr = [];
     }else{
 
-        arr = getCookie("num");
-       
+        arr = JSON.parse(str);
+        
     }
 
     //点击加入购物车
@@ -151,18 +152,16 @@ $(function(){
             obj.choiceColor = choiceColor;
             obj.choiceSize = choiceSize;
             obj.getPrice = getPrice;
-            obj.copyImg = copyImg;
+            obj.copyImg = copyImg.attr("src");
             obj.choiceName = choiceName;
         
-           
             arr.push(obj);
-           
+           console.log(arr)
             //设置cookie
-            setCookie("num",arr.join(";"),1);
-
-            alert("设置成功")
+            setCookie("num",JSON.stringify(arr),1);
+            console.log("成功");
+            
         }
     })    
 
-    
 })

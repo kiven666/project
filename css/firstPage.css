@@ -461,3 +461,10 @@
     height:100%;
 }
 
+
+/*隐藏的搜索框*/
+
+.search{width:290px;position: absolute;right:0;top:0;border-left:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;background:#fff;display: none;}
+.lookingFor{width:290px;height:50px;overflow: hidden;}
+.search .lookingFor .shuru{width:232px;height:50px;line-height:50px;border:0;float:left;padding-left:5px;color:#999;text-indent:5px;letter-spacing: 3px;}
+.sousuo{width:50px;height:50px;line-height:50px;text-align:center;border-left:1px solid #e2e2e2;font-size:16px;color:#000;display: block;float:left;}

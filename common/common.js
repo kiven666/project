@@ -122,7 +122,7 @@ function removeCookie(name) {
     }else{
       
     }
-})*/
+})
 
 // $(function(){
 
@@ -136,4 +136,4 @@ function removeCookie(name) {
 //     }
 
 
-// })
+// })*/

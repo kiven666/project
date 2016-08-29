@@ -20,22 +20,30 @@
 
 .contain_main .goodList{width:996px;height:30px;line-height:30px;background: #f9f9f9;display: none;margin:0 auto}
 .contain_main .goodList li{float:left;text-align:center;}
-.contain_main .goodList li div{width:110px;height:30px;}
-.contain_main .goodList .product{width:420px;}
-.cart_null{width:989px;height:180px;padding-top:10px;line-height:20px;}
+.contain_main .goodList li div{width:140px;height:30px;}
+.contain_main .goodList .operation{width:134px;}
+
+.contain_main .goodList .product{width:420px;text-indent:-50px}
+.cart_null{width:989px;padding-top:10px;line-height:20px;}
 
 .cart_null_next{width:400px;margin:50px 0 0 320px;font-size:14px;}
 .cart_null_next i{display: inline-block;width:43px;height:38px;background:url(../common/tubiao.png) -337px -357px no-repeat;float:left;margin-right:20px;}
 .cart_null_next a{color:#690;font-size:12px;}
 
 /*结算*/
-.jiesuan{width:494px;position: relative;margin-top:20px;border:1px solid #ccc;height:41px;line-height:41px;}
+
+.jjj{width:990px;}
+
+.jiesuan{float:left;width:494px;position: relative;margin-top:20px;border:1px solid #ccc;height:41px;line-height:41px;}
 .jiesuan .ticket_i{width:15px;height:15px;cursor: pointer;margin:13px 10px 0 20px;background:url(../common/tubiao.png) -89px -911px no-repeat;float:left;}
 .jiesuan .youhui{float:left;}
 .jiesuan .ticket_select{width:240px;height:22px;border:1px solid #ccc;float: left;margin:8px 15px 0 15px;}
 .jiesuan .ticket_select_i{width:22px;height:22px;background:url(../common/tubiao.png) -124px -911px no-repeat;float:right;}
 .jiesuan .ticket_select_ipt{width:217px;height:22px;float:left;border:0;text-align: center;}
 .jiesuan .sure{width:70px;height:24px;float:left;margin-top:8px;background: #f63;color:#fff;text-align:center;border-radius:4px;line-height:24px;}
+
+.lb{width:100px;float:right;margin-top:30px;font-size:14px;font-weight:700;letter-spacing:8px;}
+.lb input{padding-right:14px;}
 
 /*======  计算位置   ======*/
 .account{width:990px;margin-top:40px;text-align:right;color:#666;margin:0 auto}
@@ -77,3 +85,36 @@
 
 .leftArrow,.rightArrow{position:absolute;width:20px;height:40px;top:50%;left:0;background:rgba(0,0,0,.2);line-height:40px;text-align:center;font-size:16px;color:#fff;margin-top:-20px;}
 .rightArrow{right:0;left:auto;}
+
+
+/*=========   添加进来的物品的样式 cookie得到    ===========*/
+
+.list_promote{width:989px;border-bottom:1px dashed #ccc;margin-bottom:-1px;overlow:hidden;}
+.list_promote .left_div{width:220px;height:135px;float:left;overflow: hidden;}
+.list_promote .ipt_checkbox{margin:65px 55px 0 12px;float:left;}
+.list_promote .cpImg{width:86px;height:112px;margin-top:12px;float:left;}
+.list_promote .jsh{width:220px;height:135px;margin-left:15px;float:left;font-size:13px;}
+
+.list_promote .good_name{margin-top:20px;}
+.list_promote .jsh p{line-height:26px;}
+.list_promote .good_size{color:#999;}
+
+.list_promote .three_a a{display: inline-block;width:28px;height:28px;border:1px solid #e2e2e2;line-height:28px;margin-right:5px;}
+.three_a .a_1{background:url(../images/zsg.png) no-repeat;}
+.three_a .a_2{background:url(../images/zsg.png) 0 -28px no-repeat;}
+.three_a .a_3{background:url(../images/zsg.png) 0 -56px no-repeat;}
+
+.count_list{width:140px;height:135px;float:left;line-height:135px;text-align:center;margin-left:34px;}
+.count_list a{width:30px;height:30px;display: inline-block;vertical-align:middle;}
+.count_list input{width:28px;height:28px;line-height:28px;text-align:center;color:#999;border:1px solid #e2e2e2;vertical-align:middle;}
+.count_list .reduce_a{background:url(../images/plus_and_reduce.png) no-repeat;}
+.count_list .add_plus{background:url(../images/plus_and_reduce.png) 0 -30px no-repeat;}
+
+.div_price{width:140px;height:90px;float:left;text-align:center;padding-top:45px;}
+.div_price p{line-height:22px;color:#999;font-size:13px;}
+
+/*积分*/
+.jfen{width:140px;height:80px;float:left;text-align:center;padding-top:58px;color:#999;}
+
+.jiMoney{width:130px;height:80px;float:left;text-align:center;padding-top:58px;color:#f63;font-weight:800;font-size:16px;}
+

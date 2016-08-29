@@ -109,6 +109,35 @@ $(function(){
     })
 
 
+    //点击搜索按钮  出搜索框
+    
+    var $search = $(".pa2");
+    $search.click(function(){
+
+        //e.stopPropagation();
+
+        $(".search").show();
+        $('.shuru').click(function(){
+
+            //e.stopPropagation();
+            $(this).val("");
+
+        })
+
+        $(".shuru").blur(function(){
+            
+            $(".search").hide();
+        })
+
+        $("body").click(function(e){
+            if(e.target == document.documentElement){
+                $(".search").hide();
+            }
+        })
+
+    })
+
+
     /*var use = getCookie("username");
     if(use !="" && use !=null){
         console.log(1);
