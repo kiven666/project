@@ -70,11 +70,11 @@ $(function(){
 
     var $sideOut = $(".biubiu");
     $sideOut.click(function(){
-
-        if($sideBar.hasClass("right_left")){
-            $sideBar.removeClass("right_left");
-        }else{
-            $sideBar.addClass("right_left");
+       
+        if($sideBar.offset().left + $sideBar.width() == $(window).width()){
+            $sideBar.animate({right:-$sideBar.width()});
+        }else if($sideBar.offset().left == $(window).width()){
+            $sideBar.animate({right:0});
         }
         return false;
     })
@@ -137,33 +137,48 @@ $(function(){
 
     })
 
-
-    /*var use = getCookie("username");
-    if(use !="" && use !=null){
-        console.log(1);
-        $("#yonghuming").html('你好');
-    }*/
     //点击登录 到登录页面
     $("#_denglu1").click(function(){
-        location.href = "http://localhost/html/login.html";
+        window.open("http://localhost/html/login.html");
+    })
+
+    //点击注册按钮 跳转到注册页面
+    
+    $("#_denglu1").next().click(function(){
+        window.open("http://localhost/html/register.html","注册页面");
     })
 
     //点击图片到详情页面
     $(".detail_img").click(function(){
-        localhost.href = "http://localhost/js/details.html";
+        window.open("http://localhost/js/details.html");
     })
 
 
 
 
-    $(function(){
-        var _user = getCookie('username');
-        //console.log(_user);
-        if(_user != "" && _user != null){
-           
-        }else{
-          
-        }
-    })
+
+    var _user = getCookie('username');
+    console.log(_user);
+    if(_user != "" && _user != null){
+        
+        var _span = $("<span/>").html("您好: ").css({textAlign:"left",textIndent:"4px",fontSize:"12px"});
+        var _a = $("<a/>").html(_user).css({color:"orange"});
+        var _p = $("<p/>").append([_span,_a]);
+
+        var _quit = $("<a/>").html("退出").css({color:"orange",fontSize:"12px"});
+        var _qt = $("<p/>").append(_quit);
+
+        $(".zhuce").html([_p,_qt]).css({textAlign:"center",lineHeight:"16px",marginTop:"16px"});
+
+        //点击退出  删除cookie   注册内容返回为原样
+        _quit.click(function(){
+            delCookie("username");
+            var login = $("<a/>").html("登录");
+            var reg = $("<a/>").html("注册");
+            $(".zhuce").css({width:"90px",height:"50px",lineHeight:"50px",textAlign:"right",marginTop:0}).html([login,"/",reg]);
+           // <a id="_denglu1" href="#">登录</a>/<a href="#">注册</a>
+        })
+
+    }
 
 })

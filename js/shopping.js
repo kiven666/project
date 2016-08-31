@@ -41,7 +41,7 @@ var index = {
                 dom.many.position().left = -dom.many.children().length*oneStep + dom.width;
             }else{
 
-                dom.many.animate({left:ansower});
+                dom.many.stop(true,true).animate({left:ansower});
             }
         })
         //Ïòºó·­Ò»Ö¡
@@ -58,7 +58,7 @@ var index = {
                 dom.many.position().left = 0;
             }else{
 
-                dom.many.animate({left:ansower});
+                dom.many.stop(true,true).animate({left:ansower});
 
             }
         })
@@ -111,8 +111,8 @@ var index = {
 
                 //单价
                 var divPrice = $("<div/>").addClass("div_price");
-                var moneyP = $("<p>" + obj.getPrice + "</p>");
-                var vip = $("<p><strong>玛瑙会员0%: " + obj.getPrice + "</strong></p>");
+                var moneyP = $("<p>￥" + obj.getPrice + "</p>");
+                var vip = $("<p><strong>玛瑙会员0%: ￥" + obj.getPrice + "</strong></p>");
 
                 //积分
                 var jfen = $("<div/>").html("￥ ").addClass("jfen");
@@ -120,7 +120,7 @@ var index = {
                 jfen.append(fen);
 
                 //小计
-                var jiMoney = $("<div/>").html(obj.getPrice).addClass("jiMoney");
+                var jiMoney = $("<div/>").html("￥" + obj.getPrice).addClass("jiMoney");
 
                 divPrice.append([moneyP,vip]);
 
@@ -144,8 +144,9 @@ var index = {
         choice.click(function(){
             var isChecked = choice.filter(":checked");
             if(isChecked.length == choice.length){
-                
+
                 allSelect.prop("checked",true);
+
             }else{
                 allSelect.prop("checked",false);
             }  
@@ -159,7 +160,7 @@ var index = {
 
     },
 
-    //删除整列
+    //删除整列 移除cookie
     delete:function(){
 
         var sureDel = $(".a_3");
@@ -167,15 +168,27 @@ var index = {
 
         sureDel.click(function(){
             var ord = $(this).closest(".list_promote").index();
- 
+           
             $(this).closest(".list_promote").remove();
         //获取到cookie
             var str = getCookie("num");
+           
             if(str !="" || str !=null){
                 var nArr = JSON.parse(str);
+               
                 for(var i=0;i<nArr.length;i++){
-                    if(ord == (i+1)){
-                        delCookie(nArr[i]);
+                    if(ord-1 == i){
+                        
+                        nArr.splice(i, 1);
+                        $(".plusOne").html(nArr.length);
+                        $(".carCnt").html(nArr.length);
+                        $(".carCnt").css("color","#f63");
+                        $(".plusOne").css("color","#f63");
+                        // if (nArr == []) {
+                        //     delCookie('num');
+                        // } else {
+                        setCookie('num', JSON.stringify(nArr), 1);
+                        // }
                     }
                 }
             }
@@ -187,13 +200,29 @@ var index = {
 
         var reduceOne = $(".reduce_a");
         var addMore = $(".add_plus");   //加
-
+        var choice = $(".ipt_checkbox");
 
         //总计
         var totalMoney = $(".total_money");
-        totalMoney.html( $(".jiMoney").html());
+        var total = 0 ;
+        $('.cart_null .jiMoney').each(function() {
+            var self = this;
+            total += parseInt($(this).html().substring(1));
+            totalMoney.html("￥" + total);
+                
+           /* choice.click(function(){
 
+                if($(this).prop("checked") != true){
+                    total += 0;
+                  
+                }else{
+                    total += parseInt($(self).html().substring(1));
+                    totalMoney.html("￥" + total);
+                }
+            })*/
+           
 
+        })
 
         reduceOne.click(function(){
             
@@ -205,15 +234,21 @@ var index = {
                 shu.value--;
             }
           
-            var onePrice = $(this).closest(".list_promote").find(".div_price").children().eq(0);
+            var onePrice = $(this).parent().next().children().eq(0);
             
             var mmoney = onePrice.html().substring(1);
             
-            $(".jiMoney").html("￥" + mmoney*shu.value);
+            $(this).parent().nextAll('.jiMoney').html("￥" + mmoney*shu.value);
 
                     //总计
-            totalMoney.html( $(".jiMoney").html());
+            var total = 0;
 
+            $('.cart_null .jiMoney').each(function() {
+             
+               total += parseInt($(this).text().substring(1));
+            });
+
+            totalMoney.html('￥' + total);
         })
 
         addMore.click(function(){
@@ -221,18 +256,30 @@ var index = {
             var shu = $(this).prev(".input_num")[0];
             shu.value++;
             
-            var onePrice = $(".div_price").children().eq(0);
+            var onePrice = $(this).parent().next().children().eq(0);
             var mmoney = onePrice.html().substring(1);
             
-            $(".jiMoney").html("￥" + mmoney*shu.value);
+            $(this).parent().nextAll('.jiMoney').html("￥" + mmoney*shu.value);
 
-                    //总计
-        totalMoney.html( $(".jiMoney").html());
+            var total = 0;
 
+            $('.cart_null .jiMoney').each(function() {
+             
+                total += parseInt($(this).text().substring(1));
+            });
+
+            totalMoney.html('￥' + total);
         })
 
-    }
+        $(".go_js").click(function(){
 
+            var totalMoney = $(".total_money").html();
+            setCookie("totalMoney",totalMoney,1);
+            console.log("设置cookie成功")
+            location.href = "http://localhost/html/account.html";
+
+        })
+    }
 
 }
 

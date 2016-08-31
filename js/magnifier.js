@@ -92,22 +92,33 @@ $(function(){
    var str = getCookie("num");
    var arr;
 
-    if(getCookie("num") == null || getCookie("num") == ""){
+    if(getCookie("num") == null || getCookie("num") == "" || getCookie("num") == "[]"){
      
         arr = [];
     }else{
-
+      
         arr = JSON.parse(str);
-        
+        console.log(arr)
+        $(".plusOne").html(arr.length);
+        $(".carCnt").html(arr.length);
+        $(".carCnt").css("color","#f63");
+        $(".plusOne").css("color","#f63");
     }
 
     //点击加入购物车
     $(".join").click(function(){
 
+        str = getCookie('num');
+        if(getCookie("num") == null || getCookie("num") == ""){
+            arr = [];
+        }else {
+            arr = JSON.parse(str);
+        }
+
         var cout = $(".shul").val();    //数量
         var choiceColor = $("#color").val();    //颜色
         var choiceSize = $("#size").val();  //尺寸
-        var getPrice = $(".rmb").html();    //价格
+        var getPrice = $(".rmb").html().substring(1);    //价格
         var choiceName = $(".choiceName").html();
         var copyImg = $(".copyImg");
        
@@ -137,6 +148,7 @@ $(function(){
                 width:0,
                 height:0
             },800,function(){
+
                 $(".plusOne")[0].innerHTML++;
                 $(".carCnt")[0].innerHTML++;
                 $(".carCnt").css("color","#f63");
@@ -154,11 +166,10 @@ $(function(){
             obj.getPrice = getPrice;
             obj.copyImg = copyImg.attr("src");
             obj.choiceName = choiceName;
-        
             arr.push(obj);
-           console.log(arr)
             //设置cookie
             setCookie("num",JSON.stringify(arr),1);
+            console.log(arr);
             console.log("成功");
             
         }

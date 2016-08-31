@@ -1,0 +1,23 @@
+.logo_design{width:100%;}
+
+.logo_design .allright{width:1100px;margin-left:160px;border-left:1px solid #ccc;padding-left:30px;overflow: hidden;}
+
+.logo_design .allright .final{width:1098px;height:100px;margin:0 auto;}
+.logo_design .allright .final h2{width:500px;float:left;line-height:100px;height:100px;font-size:26px;text-align:center;}
+
+
+.logo_design .allright .final .three_bu{width:490px;height:60px;float:right;padding-top:20px;}
+.logo_design .allright .final .three_bu .ap{height:29px;background:url(../images/step.png)0  -60px no-repeat;overflow: hidden;margin-top:10px;}
+.logo_design .allright .final  span{color:#666;width:160px;height:20px;float:left;text-align:center;line-height:20px;margin-top:10px;}
+
+.over{width:1098px;border:1px solid #ccc;margin:0 auto;}
+.over .title{width:100%;background:#000;color:#fff;font-size: 18px;font-weight:800;height:46px;line-height:46px;text-indent:20px;letter-spacing: 3px;}
+
+.tb{width:1000px;margin:30px auto;}
+.tb td{border:1px solid #ccc;}
+.tb .ddNum td{height:50px;text-align:center;width:249px;}
+.tb .stone td{height:100px;text-align:center;width:249px;line-height:100px;}
+.tb .stone .payCash{font-size:28px;color:#33b7ff;font-weight:800;}
+.tb .oneGe td{height:50px;line-height:50px;text-align:left;text-indent:20px;}
+
+#left_pos{position: absolute;left:-14px;top:126px;height:547px;overflow: hidden}

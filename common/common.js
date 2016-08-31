@@ -50,7 +50,7 @@ function setCookie(name, value, expires, path, domain, secure) {
 }
 
 function delCookie(name, path, domain, secure) {
-    var value = $getCookie(name);
+    var value = getCookie(name);
     if (value != null) {
         var exp = new Date();
         exp.setMinutes(exp.getMinutes() - 1000);
@@ -71,7 +71,7 @@ function setCookie(name, val, iDay) {
     // "expires=" + 日期对象
     // 【注意】 expires 前一定是 分号！
     // document.cookie = "user=jobs;expires=" + obj;
-    document.cookie = "" + name + "=" + val + ";expires=" + obj + ";/path";
+    document.cookie = "" + name + "=" + val + ";expires=" + obj + ";path=/";
 }
 
 

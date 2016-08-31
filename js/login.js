@@ -15,7 +15,7 @@ $(function(){
 	},function(){
         $(this).find("ul").hide();
         $(this).children().eq(0).css("color","#666")
-        $(this).css({background:"#f3f2f2",borderBottom:"1px solid #ccc"});
+        $(this).css({background:"#f3f2f2"});
     })
 
     mykede.on("mouseenter","li",function(){

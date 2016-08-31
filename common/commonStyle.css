@@ -73,8 +73,10 @@
     height:50px;
     line-height:50px;
     text-align:right;
-
 }
+
+.sign_in .reg:hover{color:#f63;}
+
 .sign_in .car{
    
     line-height:50px;
