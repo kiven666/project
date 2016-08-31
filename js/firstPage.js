@@ -150,7 +150,7 @@ $(function(){
 
     //点击图片到详情页面
     $(".detail_img").click(function(){
-        window.open("http://localhost/js/details.html");
+        window.open("http://localhost/html/details.html","详情页");
     })
 
 
@@ -175,8 +175,8 @@ $(function(){
             delCookie("username");
             var login = $("<a/>").html("登录");
             var reg = $("<a/>").html("注册");
-            $(".zhuce").css({width:"90px",height:"50px",lineHeight:"50px",textAlign:"right",marginTop:0}).html([login,"/",reg]);
-           // <a id="_denglu1" href="#">登录</a>/<a href="#">注册</a>
+            $(".zhuce").html([login,"/",reg]).addClass("zhuce");//css({width:"90px",height:"50px",lineHeight:"50px",textAlign:"right",marginTop:0}).html([login,"/",reg]);
+           
         })
 
     }

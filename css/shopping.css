@@ -70,7 +70,7 @@
 /*=======  猜你喜欢 推荐  ========*/
 .recomment{width: 100%;background:#fff;height:350px;padding:49px 0 80px 0;}
 .bao{width:990px;height:326px;margin:30px auto 0 auto;overflow:hidden;position:relative;}
-.tuijian_good{width:988px;height:260px;position:absolute;top:29px;left:0;margin:29px auto 50px auto;border:1px solid #ccc;}
+.tuijian_good{width:985px;height:260px;position:absolute;top:29px;left:0;margin:29px auto 50px auto;border:1px solid #ccc;}
 .tuijian_good .many{left:0;top:0;position:absolute;height:260px;}
 .tuijian_good .many li{height:230px;width:187px;float:left;padding:0 5px 30px 5px;height:260px;}
 

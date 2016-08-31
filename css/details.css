@@ -15,6 +15,9 @@
     height:34px;
     padding:75px 0 30px 50px;
 }
+#introduce .mainDetail .korea_worman a{
+    color:#2b2b2b;
+}
 
 .whole{
     width:1000px;
@@ -168,3 +171,5 @@ table .one_td{background:#e0e0e0;}
 .peisong span{display: inline-block;width:75px;line-height:25px;float:left;}
 .peisong p{width:860px}
 .peisong i{width:740px;float:left;display: inline-block;line-height:25px;}
+
+#left_pos{position: absolute;top:126px;left:-6px;height:1000px;overflow: hidden}

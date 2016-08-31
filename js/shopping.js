@@ -1,5 +1,5 @@
 
-var index = {
+var Shopping = {
 
     dom:{},
     init:function(){
@@ -26,7 +26,7 @@ var index = {
 
         var dom = this.dom;
         
-        //ÏòÇ°·­ÒëÖ¡
+        //向左走一帧
         dom.prev.click(function(){
 
             var oneStep = dom.many.children().first().outerWidth();
@@ -35,24 +35,24 @@ var index = {
 
             var ansower = nowLeft - oneStep;
             
-             
             if(nowLeft <= -dom.many.children().length*oneStep + dom.width){
                
                 dom.many.position().left = -dom.many.children().length*oneStep + dom.width;
             }else{
 
-                dom.many.stop(true,true).animate({left:ansower});
+                dom.many.stop(true,false).animate({left:ansower});
             }
         })
-        //Ïòºó·­Ò»Ö¡
+
+        //向右走一帧
         dom.next.click(function(){
 
             var oneStep = dom.many.children().first().outerWidth();
           
             var nowLeft = dom.many.position().left;
-            console.log(nowLeft)
+            
             var ansower = nowLeft + oneStep;  
-            console.log(ansower)
+            
             if(nowLeft >= 0){
                
                 dom.many.position().left = 0;
@@ -63,9 +63,9 @@ var index = {
             }
         })
 
-     //µã»÷ È¥¹ºÎï
+     //点击去选择商品
         dom.goShop.click(function(){
-            location.href = "http://localhost/index.html";
+            window.open("http://localhost/index.html","去选购");
         })
     },
 
@@ -202,28 +202,24 @@ var index = {
         var addMore = $(".add_plus");   //加
         var choice = $(".ipt_checkbox");
 
-        //总计
+        //页面加载先计算小计
+        $(".count_list .input_num").each(function(){
+           
+            var oneprice = $(this).parent().next($(".div_price")).children().eq(0).html().substring(1);
+       
+            $(this).closest($(".list_promote")).find(".jiMoney").html("￥" + $(this).val()*oneprice);
+        })
+
+        //页面加载时总计
         var totalMoney = $(".total_money");
         var total = 0 ;
         $('.cart_null .jiMoney').each(function() {
             var self = this;
             total += parseInt($(this).html().substring(1));
             totalMoney.html("￥" + total);
-                
-           /* choice.click(function(){
-
-                if($(this).prop("checked") != true){
-                    total += 0;
-                  
-                }else{
-                    total += parseInt($(self).html().substring(1));
-                    totalMoney.html("￥" + total);
-                }
-            })*/
-           
 
         })
-
+    //按减号
         reduceOne.click(function(){
             
             var shu = $(this).next(".input_num")[0];
@@ -240,7 +236,7 @@ var index = {
             
             $(this).parent().nextAll('.jiMoney').html("￥" + mmoney*shu.value);
 
-                    //总计
+        //总计
             var total = 0;
 
             $('.cart_null .jiMoney').each(function() {
@@ -271,19 +267,54 @@ var index = {
             totalMoney.html('￥' + total);
         })
 
+    //点击选择按钮时的变化
+        var total = 0;
+        $(".ipt_checkbox").click(function(){
+            var ttm = parseInt(totalMoney.html().substring(1));
+
+            total = parseInt($(this).nextAll(".jiMoney").html().substring(1));
+            
+            if($(this).prop("checked") == false){
+
+                totalMoney.html("￥" + (ttm - total));
+             
+            }else if($(this).prop("checked") == true){
+
+                totalMoney.html("￥" + (ttm + total));
+            }
+        })
+
+    //点击全选按钮时的总价变化
+        
+        $(".lb").find("input").click(function(){
+        
+            if($(this).prop("checked")){
+                var total = 0;
+                $('.cart_null .jiMoney').each(function() {
+             
+                   total += parseInt($(this).text().substring(1));
+                });
+                totalMoney.html("￥" + total);
+            }else{
+                totalMoney.html("￥" + 0);
+            }
+        })
+
+
+
+    //结算按钮  把总数设置cookie  结算页面获取
         $(".go_js").click(function(){
 
             var totalMoney = $(".total_money").html();
             setCookie("totalMoney",totalMoney,1);
             console.log("设置cookie成功")
-            location.href = "http://localhost/html/account.html";
+            window.open("http://localhost/html/account.html");
 
         })
     }
-
 }
 
 $(function(){
-    index.init();
+    Shopping.init();
 
 })
